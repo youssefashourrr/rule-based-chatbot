@@ -15,7 +15,7 @@ object Chatbot {
     }
 
 
-    handleUserInput(input: String): String = {
+    def handleUserInput(input: String): String = {
     }
 
 

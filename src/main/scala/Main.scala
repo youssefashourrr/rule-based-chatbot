@@ -1,4 +1,3 @@
-@main
-def run(): Unit = {
+@main def run(): Unit = {
     println("Starting app...")
 }

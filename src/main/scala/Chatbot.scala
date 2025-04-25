@@ -11,18 +11,14 @@ object Chatbot {
     }
 
 
-    def greetUser(): String = { 
-    }
+    def greetUser(): String = ???
 
 
-    def handleUserInput(input: String): String = {
-    }
+    def handleUserInput(input: String): String = ???
 
 
-    def parseInput(input: String): String = {
-    }
+    def parseInput(input: String): String = ???
 
 
-    def generateResponse(query: String): String = {  
-    }
+    def generateResponse(query: String): String = ???
 }

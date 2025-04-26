@@ -1,3 +1,6 @@
+import Chatbot._
+
+
 @main def run(): Unit = {
-    println("Starting app...")
+    println(greetUser())
 }

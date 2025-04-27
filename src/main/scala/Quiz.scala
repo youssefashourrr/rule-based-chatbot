@@ -1,12 +1,11 @@
 import com.github.tototoshi.csv.*
-
 import scala.annotation.tailrec
 import scala.util.Random
 import scala.io.StdIn
 
 object Quiz
 {
-    @tailrec def selectQuizQuestions(mode:Boolean, result:Int = 0,numberQuestions): Unit =
+    @tailrec def selectQuizQuestions(mode:Boolean, result:Int = 0,numberQuestions:Int): Unit =
         val rows = CSVReader.open("data.csv").all()
         val randRow = rows(Random.nextInt(rows.length))
         val question = randRow.head

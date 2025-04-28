@@ -1,5 +1,6 @@
-import Quiz._
+import DatasetLoader._
 import ResourceLoader._
+import Quiz._
 
 import scala.util.Random
 
@@ -13,7 +14,6 @@ object Chatbot {
         state = newState
     }
 
-    
     def greetUser(): String = {
         val greetings: List[String] = List(
             "Hey there! It's great to meet you. What's your name?",

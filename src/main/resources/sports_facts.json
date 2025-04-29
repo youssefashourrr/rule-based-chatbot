@@ -1,0 +1,246 @@
+[
+    {
+      "sport": "soccer",
+      "fact": "Soccer is the most popular sport in the world, with over 4 billion fans globally.",
+      "keywords": ["most popular", "fans", "global", "worldwide"],
+      "type": "how many"
+    },
+    {
+      "sport": "soccer",
+      "fact": "A standard soccer match is 90 minutes long, divided into two halves of 45 minutes.",
+      "keywords": ["match duration", "game time", "halves", "90 minutes"],
+      "type": "how long"
+    },
+    {
+      "sport": "soccer",
+      "fact": "Each soccer team has 11 players on the field at a time.",
+      "keywords": ["players", "team size", "11 players"],
+      "type": "how many"
+    },
+    {
+      "sport": "soccer",
+      "fact": "The FIFA World Cup is the most prestigious soccer tournament, held every 4 years.",
+      "keywords": ["world cup", "fifa", "tournament", "every 4 years"],
+      "type": "what"
+    },
+    {
+      "sport": "soccer",
+      "fact": "The first FIFA World Cup was held in Uruguay in 1930.",
+      "keywords": ["first world cup", "1930", "uruguay"],
+      "type": "when"
+    },
+    {
+      "sport": "soccer",
+      "fact": "A goal is scored when the entire ball crosses the goal line between the goalposts.",
+      "keywords": ["goal", "scoring", "goal line"],
+      "type": "what"
+    },
+    {
+      "sport": "soccer",
+      "fact": "The offside rule prevents players from gaining an unfair advantage by being too close to the opponent’s goal.",
+      "keywords": ["offside", "rule", "advantage"],
+      "type": "what"
+    },
+    {
+      "sport": "soccer",
+      "fact": "Yellow cards are used to caution players for misconduct.",
+      "keywords": ["yellow card", "caution", "warning"],
+      "type": "what"
+    },
+    {
+      "sport": "soccer",
+      "fact": "Red cards are used to eject players from the game for serious offenses.",
+      "keywords": ["red card", "ejection", "serious foul"],
+      "type": "what"
+    },
+    {
+      "sport": "soccer",
+      "fact": "A team that receives a red card must continue the game with one fewer player.",
+      "keywords": ["red card", "fewer players", "penalty"],
+      "type": "what"
+    },
+  
+    {
+      "sport": "soccer",
+      "fact": "The ball used in soccer must be spherical and made of suitable material.",
+      "keywords": ["ball", "equipment", "shape"],
+      "type": "what"
+    },
+    {
+      "sport": "soccer",
+      "fact": "Soccer is called 'football' in most countries outside of North America.",
+      "keywords": ["football", "soccer name", "regional name"],
+      "type": "what"
+    },
+    {
+      "sport": "soccer",
+      "fact": "A hat-trick occurs when a player scores three goals in a single game.",
+      "keywords": ["hat trick", "three goals", "one match"],
+      "type": "what"
+    },
+    {
+      "sport": "soccer",
+      "fact": "Penalty kicks are awarded for fouls committed inside the penalty box.",
+      "keywords": ["penalty", "penalty kick", "penalty box"],
+      "type": "what"
+    },
+    {
+      "sport": "soccer",
+      "fact": "The goalkeeper is the only player allowed to use their hands, and only within the penalty area.",
+      "keywords": ["goalkeeper", "hands", "penalty area"],
+      "type": "who"
+    },
+    {
+      "sport": "soccer",
+      "fact": "Substitutions allow teams to replace tired or injured players during a match.",
+      "keywords": ["substitution", "replace", "players"],
+      "type": "what"
+    },
+    {
+      "sport": "soccer",
+      "fact": "Extra time is used when a knockout match ends in a draw.",
+      "keywords": ["extra time", "draw", "knockout"],
+      "type": "when"
+    },
+    {
+      "sport": "soccer",
+      "fact": "Penalty shootouts decide the winner when extra time ends in a draw.",
+      "keywords": ["penalty shootout", "tiebreak", "draw"],
+      "type": "what"
+    },
+    {
+      "sport": "soccer",
+      "fact": "Lionel Messi and Cristiano Ronaldo are among the most famous soccer players in history.",
+      "keywords": ["messi", "ronaldo", "famous players"],
+      "type": "who"
+    },
+    {
+      "sport": "soccer",
+      "fact": "Brazil has won the most FIFA World Cups, with five titles.",
+      "keywords": ["brazil", "most titles", "world cups"],
+      "type": "who"
+    },
+  
+    {
+      "sport": "soccer",
+      "fact": "The UEFA Champions League is the top European club competition.",
+      "keywords": ["champions league", "uefa", "europe"],
+      "type": "what"
+    },
+    {
+      "sport": "soccer",
+      "fact": "The Premier League is the top professional soccer league in England.",
+      "keywords": ["premier league", "england", "top league"],
+      "type": "what"
+    },
+    {
+      "sport": "soccer",
+      "fact": "VAR (Video Assistant Referee) helps referees review key decisions.",
+      "keywords": ["var", "video referee", "replay"],
+      "type": "what"
+    },
+    {
+      "sport": "soccer",
+      "fact": "Soccer was first included in the Olympics in 1900 for men and 1996 for women.",
+      "keywords": ["olympics", "soccer inclusion", "years"],
+      "type": "when"
+    },
+    {
+      "sport": "soccer",
+      "fact": "The standard soccer pitch is about 100 to 110 meters long.",
+      "keywords": ["pitch size", "field length", "dimensions"],
+      "type": "how long"
+    },
+    {
+      "sport": "soccer",
+      "fact": "The captain wears an armband and leads the team on the field.",
+      "keywords": ["captain", "armband", "leadership"],
+      "type": "who"
+    },
+    {
+      "sport": "soccer",
+      "fact": "Throw-ins are used to restart play when the ball goes out over the sidelines.",
+      "keywords": ["throw in", "restart", "sideline"],
+      "type": "what"
+    },
+    {
+      "sport": "soccer",
+      "fact": "Corners are awarded when the defending team last touches the ball before it crosses their goal line.",
+      "keywords": ["corner kick", "goal line", "defending team"],
+      "type": "what"
+    },
+    {
+      "sport": "soccer",
+      "fact": "Free kicks are awarded after fouls, with direct and indirect types.",
+      "keywords": ["free kick", "fouls", "direct", "indirect"],
+      "type": "what"
+    },
+    {
+      "sport": "soccer",
+      "fact": "Handballs occur when a player deliberately handles the ball with their hand or arm.",
+      "keywords": ["handball", "foul", "deliberate"],
+      "type": "what"
+    },
+  
+    {
+      "sport": "soccer",
+      "fact": "The referee is in charge of enforcing the rules during a match.",
+      "keywords": ["referee", "rules", "match official"],
+      "type": "who"
+    },
+    {
+      "sport": "soccer",
+      "fact": "Assistant referees help judge offsides and out-of-bounds calls.",
+      "keywords": ["assistant referee", "offside", "calls"],
+      "type": "who"
+    },
+    {
+      "sport": "soccer",
+      "fact": "A clean sheet refers to a game in which the goalkeeper allows no goals.",
+      "keywords": ["clean sheet", "no goals", "goalkeeper"],
+      "type": "what"
+    },
+    {
+      "sport": "soccer",
+      "fact": "A brace means a player scored two goals in one game.",
+      "keywords": ["brace", "two goals", "match"],
+      "type": "what"
+    },
+    {
+      "sport": "soccer",
+      "fact": "A golden goal used to end a match as soon as one team scored in extra time, but it is no longer used.",
+      "keywords": ["golden goal", "sudden death", "extra time"],
+      "type": "what"
+    },
+    {
+      "sport": "soccer",
+      "fact": "A bicycle kick is an acrobatic move where a player kicks the ball backward over their own head.",
+      "keywords": ["bicycle kick", "acrobatic", "goal"],
+      "type": "what"
+    },
+    {
+      "sport": "soccer",
+      "fact": "A derby refers to a match between two local rival teams.",
+      "keywords": ["derby", "rivalry", "local teams"],
+      "type": "what"
+    },
+    {
+      "sport": "soccer",
+      "fact": "FIFA stands for Fédération Internationale de Football Association.",
+      "keywords": ["fifa", "acronym", "organization"],
+      "type": "what"
+    },
+    {
+      "sport": "soccer",
+      "fact": "The Ballon d'Or is awarded annually to the best male footballer.",
+      "keywords": ["ballon d'or", "award", "best player"],
+      "type": "what"
+    },
+    {
+      "sport": "soccer",
+      "fact": "The Women's World Cup was first held in 1991.",
+      "keywords": ["women", "world cup", "1991"],
+      "type": "when"
+    }
+  ]
+  

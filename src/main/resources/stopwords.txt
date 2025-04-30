@@ -67,7 +67,6 @@ he's
 him
 himself
 his
-how
 i
 i'd
 if
@@ -93,7 +92,6 @@ me
 mightn
 mightn't
 more
-most
 mustn
 mustn't
 my
@@ -172,12 +170,8 @@ were
 weren
 weren't
 we've
-what
-when
-where
 which
 while
-who
 whom
 why
 will

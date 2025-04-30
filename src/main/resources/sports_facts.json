@@ -1,114 +1,116 @@
 [
     {
         "sport": "soccer",
-        "fact": "Soccer is the most popular sport in the world, with over 4 billion fans globally.",
+        "content": "Soccer is the most popular sport in the world, with over 4 billion fans globally.",
         "keywords": [
             "most popular",
             "fans",
             "global",
             "worldwide"
         ],
-        "type": "how many"
+        "intent": "how many"
     },
     {
         "sport": "soccer",
-        "fact": "A standard soccer match is 90 minutes long, divided into two halves of 45 minutes.",
+        "content": "A standard soccer match is 90 minutes long, divided into two halves of 45 minutes.",
         "keywords": [
+            "duration",
             "match duration",
+            "time",
             "game time",
             "halves",
             "90 minutes"
         ],
-        "type": "how long"
+        "intent": "how long"
     },
     {
         "sport": "soccer",
-        "fact": "Each soccer team has 11 players on the field at a time.",
+        "content": "Each soccer team has 11 players on the field at a time.",
         "keywords": [
             "players",
             "team size",
             "11 players"
         ],
-        "type": "how many"
+        "intent": "how many"
     },
     {
         "sport": "soccer",
-        "fact": "The FIFA World Cup is the most prestigious soccer tournament, held every 4 years.",
+        "content": "The FIFA World Cup is the most prestigious soccer tournament, held every 4 years.",
         "keywords": [
             "world cup",
             "fifa",
             "tournament",
             "4 years"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "soccer",
-        "fact": "The first FIFA World Cup was held in Uruguay in 1930.",
+        "content": "The first FIFA World Cup was held in Uruguay in 1930.",
         "keywords": [
             "first",
             "world cup",
             "1930",
             "uruguay"
         ],
-        "type": "when"
+        "intent": "when"
     },
     {
         "sport": "soccer",
-        "fact": "A goal is scored when the entire ball crosses the goal line between the goalposts.",
+        "content": "A goal is scored when the entire ball crosses the goal line between the goalposts.",
         "keywords": [
             "goal",
             "scoring",
             "goal line"
         ],
-        "type": "how"
+        "intent": "how"
     },
     {
         "sport": "soccer",
-        "fact": "The offside rule prevents players from gaining an unfair advantage by being too close to the opponent’s goal.",
+        "content": "The offside rule prevents players from gaining an unfair advantage by being too close to the opponent’s goal.",
         "keywords": [
             "offside",
             "rule",
             "advantage"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "soccer",
-        "fact": "Yellow cards are used to caution players for misconduct.",
+        "content": "Yellow cards are used to caution players for misconduct.",
         "keywords": [
             "yellow card",
             "caution",
             "warning",
             "minor"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "soccer",
-        "fact": "Red cards are used to eject players from the game for serious offenses.",
+        "content": "Red cards are used to eject players from the game for serious offenses.",
         "keywords": [
             "red card",
             "ejection",
             "foul",
             "serious"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "soccer",
-        "fact": "The ball used in soccer must be spherical and made of suitable material.",
+        "content": "The ball used in soccer must be spherical and made of suitable material.",
         "keywords": [
             "ball",
             "equipment",
             "shape",
             "material"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "soccer",
-        "fact": "Soccer is called 'football' in most countries outside of North America.",
+        "content": "Soccer is called 'football' in most countries outside of North America.",
         "keywords": [
             "football",
             "soccer name",
@@ -116,135 +118,135 @@
             "another name",
             "alternative"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "soccer",
-        "fact": "A hat-trick occurs when a player scores three goals in a single game.",
+        "content": "A hat-trick occurs when a player scores three goals in a single game.",
         "keywords": [
             "hat-trick",
             "three",
             "3 goals",
             "one match"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "soccer",
-        "fact": "Penalty kicks are awarded for fouls committed inside the penalty box.",
+        "content": "Penalty kicks are awarded for fouls committed inside the penalty box.",
         "keywords": [
             "penalty",
             "penalty kick",
             "penalty box"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "soccer",
-        "fact": "The goalkeeper is the only player allowed to use their hands, and only within the penalty area.",
+        "content": "The goalkeeper is the only player allowed to use their hands, and only within the penalty area.",
         "keywords": [
             "goalkeeper",
             "hands",
             "penalty area"
         ],
-        "type": "who"
+        "intent": "who"
     },
     {
         "sport": "soccer",
-        "fact": "Substitutions allow teams to replace tired or injured players during a match.",
+        "content": "Substitutions allow teams to replace tired or injured players during a match.",
         "keywords": [
             "substitution",
             "replace",
             "players"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "soccer",
-        "fact": "Extra time is used when a knockout match ends in a draw.",
+        "content": "Extra time is used when a knockout match ends in a draw.",
         "keywords": [
             "extra time",
             "draw",
             "knockout"
         ],
-        "type": "when"
+        "intent": "when"
     },
     {
         "sport": "soccer",
-        "fact": "Penalty shootouts decide the winner when extra time ends in a draw.",
+        "content": "Penalty shootouts decide the winner when extra time ends in a draw.",
         "keywords": [
             "penalty",
             "penalty shootout",
             "tiebreak",
             "draw"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "soccer",
-        "fact": "Lionel Messi and Cristiano Ronaldo are among the most famous soccer players in history.",
+        "content": "Lionel Messi and Cristiano Ronaldo are among the most famous soccer players in history.",
         "keywords": [
             "messi",
             "ronaldo",
             "famous players"
         ],
-        "type": "who"
+        "intent": "who"
     },
     {
         "sport": "soccer",
-        "fact": "Brazil has won the most FIFA World Cups, with five titles.",
+        "content": "Brazil has won the most FIFA World Cups, with five titles.",
         "keywords": [
             "brazil",
             "most titles",
             "world cups"
         ],
-        "type": "who"
+        "intent": "who"
     },
     {
         "sport": "soccer",
-        "fact": "The UEFA Champions League is the top European club competition.",
+        "content": "The UEFA Champions League is the top European club competition.",
         "keywords": [
             "champions league",
             "uefa",
             "europe",
             "regional"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "soccer",
-        "fact": "The Premier League is the top professional soccer league in England.",
+        "content": "The Premier League is the top professional soccer league in England.",
         "keywords": [
             "premier league",
             "england",
             "top league"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "soccer",
-        "fact": "VAR (Video Assistant Referee) helps referees review key decisions.",
+        "content": "VAR (Video Assistant Referee) helps referees review key decisions.",
         "keywords": [
             "var",
             "video referee",
             "replay",
             "decision"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "soccer",
-        "fact": "Soccer was first included in the Olympics in 1900 for men and 1996 for women.",
+        "content": "Soccer was first included in the Olympics in 1900 for men and 1996 for women.",
         "keywords": [
             "olympics",
             "soccer inclusion",
             "years"
         ],
-        "type": "when"
+        "intent": "when"
     },
     {
         "sport": "soccer",
-        "fact": "The standard soccer pitch is about 100 to 110 meters long.",
+        "content": "The standard soccer pitch is about 100 to 110 meters long.",
         "keywords": [
             "size",
             "long",
@@ -253,86 +255,86 @@
             "field length",
             "dimensions"
         ],
-        "type": "how long"
+        "intent": "how long"
     },
     {
         "sport": "soccer",
-        "fact": "The captain wears an armband and leads the team on the field.",
+        "content": "The captain wears an armband and leads the team on the field.",
         "keywords": [
             "captain",
             "armband",
             "leader"
         ],
-        "type": "who"
+        "intent": "who"
     },
     {
         "sport": "soccer",
-        "fact": "Throw-ins are used to restart play when the ball goes out over the sidelines.",
+        "content": "Throw-ins are used to restart play when the ball goes out over the sidelines.",
         "keywords": [
             "throw-in",
             "outside",
             "restart",
             "sideline"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "soccer",
-        "fact": "Corners are awarded when the defending team last touches the ball before it crosses their goal line.",
+        "content": "Corners are awarded when the defending team last touches the ball before it crosses their goal line.",
         "keywords": [
             "corner",
             "corner kick",
             "goal line",
             "defending team"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "soccer",
-        "fact": "Free kicks are awarded after fouls, with direct and indirect types.",
+        "content": "Free kicks are awarded after fouls, with direct and indirect types.",
         "keywords": [
             "free kick",
             "fouls",
             "direct",
             "indirect"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "soccer",
-        "fact": "Handballs occur when a player deliberately handles the ball with their hand or arm.",
+        "content": "Handballs occur when a player deliberately handles the ball with their hand or arm.",
         "keywords": [
             "hand",
             "handball",
             "foul",
             "deliberate"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "soccer",
-        "fact": "The referee is in charge of enforcing the rules during a match.",
+        "content": "The referee is in charge of enforcing the rules during a match.",
         "keywords": [
             "referee",
             "rules",
             "match official"
         ],
-        "type": "who"
+        "intent": "who"
     },
     {
         "sport": "soccer",
-        "fact": "Assistant referees help judge offsides and out-of-bounds calls.",
+        "content": "Assistant referees help judge offsides and out-of-bounds calls.",
         "keywords": [
             "assistant",
             "assistant referee",
             "offside",
             "calls"
         ],
-        "type": "who"
+        "intent": "who"
     },
     {
         "sport": "soccer",
-        "fact": "A clean sheet refers to a game in which the goalkeeper allows no goals.",
+        "content": "A clean sheet refers to a game in which the goalkeeper allows no goals.",
         "keywords": [
             "clean",
             "clean sheet",
@@ -340,84 +342,84 @@
             "zero",
             "goalkeeper"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "soccer",
-        "fact": "A brace means a player scored two goals in one game.",
+        "content": "A brace means a player scored two goals in one game.",
         "keywords": [
             "brace",
             "two goals",
             "one match"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "soccer",
-        "fact": "A golden goal used to end a match as soon as one team scored in extra time, but it is no longer used.",
+        "content": "A golden goal used to end a match as soon as one team scored in extra time, but it is no longer used.",
         "keywords": [
             "golden goal",
             "sudden death",
             "extra time"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "soccer",
-        "fact": "A bicycle kick is an acrobatic move where a player kicks the ball backward over their own head.",
+        "content": "A bicycle kick is an acrobatic move where a player kicks the ball backward over their own head.",
         "keywords": [
             "bicycle kick",
             "acrobatic",
             "strike"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "soccer",
-        "fact": "A derby refers to a match between two local rival teams.",
+        "content": "A derby refers to a match between two local rival teams.",
         "keywords": [
             "derby",
             "rivalry",
             "local",
             "local teams"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "soccer",
-        "fact": "FIFA stands for Fédération Internationale de Football Association.",
+        "content": "FIFA stands for Fédération Internationale de Football Association.",
         "keywords": [
             "fifa",
             "acronym",
             "organization"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "soccer",
-        "fact": "The Ballon d'Or is awarded annually to the best male footballer.",
+        "content": "The Ballon d'Or is awarded annually to the best male footballer.",
         "keywords": [
             "ballon d'or",
             "award",
             "best player"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "soccer",
-        "fact": "The Women's World Cup was first held in 1991.",
+        "content": "The Women's World Cup was first held in 1991.",
         "keywords": [
             "women",
             "world cup",
             "first",
             "1991"
         ],
-        "type": "when"
+        "intent": "when"
     },
 
     {
         "sport": "basketball",
-        "fact": "Basketball is one of the most popular sports in the world, with over 2.4 billion fans.",
+        "content": "Basketball is one of the most popular sports in the world, with over 2.4 billion fans.",
         "keywords": [
             "popular",
             "most popular",
@@ -425,11 +427,11 @@
             "global",
             "worldwide"
         ],
-        "type": "how many"
+        "intent": "how many"
     },
     {
         "sport": "basketball",
-        "fact": "A standard basketball game is divided into four quarters, each lasting 12 minutes.",
+        "content": "A standard basketball game is divided into four quarters, each lasting 12 minutes.",
         "keywords": [
             "quarters",
             "duration",
@@ -437,22 +439,22 @@
             "game duration",
             "12 minutes"
         ],
-        "type": "how long"
+        "intent": "how long"
     },
     {
         "sport": "basketball",
-        "fact": "Each basketball team has 5 players on the court at a time.",
+        "content": "Each basketball team has 5 players on the court at a time.",
         "keywords": [
             "players",
             "team",
             "team size",
             "5 players"
         ],
-        "type": "how many"
+        "intent": "how many"
     },
     {
         "sport": "basketball",
-        "fact": "The NBA (National Basketball Association) is the most popular professional basketball league.",
+        "content": "The NBA (National Basketball Association) is the most popular professional basketball league.",
         "keywords": [
             "nba",
             "league",
@@ -460,11 +462,11 @@
             "basketball",
             "professional"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "basketball",
-        "fact": "The first NBA season was held in 1946.",
+        "content": "The first NBA season was held in 1946.",
         "keywords": [
             "first",
             "nba",
@@ -472,21 +474,21 @@
             "year",
             "1946"
         ],
-        "type": "when"
+        "intent": "when"
     },
     {
         "sport": "basketball",
-        "fact": "A basketball game is won by scoring more points than the opposing team.",
+        "content": "A basketball game is won by scoring more points than the opposing team.",
         "keywords": [
             "win",
             "score",
             "points"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "basketball",
-        "fact": "A player scores two points by making a basket from anywhere inside the three-point line.",
+        "content": "A player scores two points by making a basket from anywhere inside the three-point line.",
         "keywords": [
             "points",
             "two",
@@ -495,11 +497,11 @@
             "inside",
             "inside line"
         ],
-        "type": "how"
+        "intent": "how"
     },
     {
         "sport": "basketball",
-        "fact": "A player scores three points by making a basket from beyond the three-point line.",
+        "content": "A player scores three points by making a basket from beyond the three-point line.",
         "keywords": [
             "points",
             "three",
@@ -507,31 +509,31 @@
             "three-point line",
             "long shot"
         ],
-        "type": "how"
+        "intent": "how"
     },
     {
         "sport": "basketball",
-        "fact": "Free throws are awarded after a foul, and each successful free throw is worth one point.",
+        "content": "Free throws are awarded after a foul, and each successful free throw is worth one point.",
         "keywords": [
             "free throw",
             "foul",
             "1 point"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "basketball",
-        "fact": "The shot clock is 24 seconds, meaning a team must attempt a shot within that time frame.",
+        "content": "The shot clock is 24 seconds, meaning a team must attempt a shot within that time frame.",
         "keywords": [
             "shot clock",
             "24 seconds",
             "time limit"
         ],
-        "type": "how long"
+        "intent": "how long"
     },
     {
         "sport": "basketball",
-        "fact": "The NBA All-Star Game is an annual exhibition game featuring the league's top players.",
+        "content": "The NBA All-Star Game is an annual exhibition game featuring the league's top players.",
         "keywords": [
             "star",
             "all-star game",
@@ -539,22 +541,22 @@
             "top",
             "top players"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "basketball",
-        "fact": "The NBA Finals is the championship series of the NBA, played between the winners of the Eastern and Western Conferences.",
+        "content": "The NBA Finals is the championship series of the NBA, played between the winners of the Eastern and Western Conferences.",
         "keywords": [
             "finals",
             "nba finals",
             "championship",
             "conference"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "basketball",
-        "fact": "Michael Jordan is widely regarded as the greatest basketball player of all time.",
+        "content": "Michael Jordan is widely regarded as the greatest basketball player of all time.",
         "keywords": [
             "goat",
             "greatest",
@@ -562,11 +564,11 @@
             "player",
             "greatest player"
         ],
-        "type": "who"
+        "intent": "who"
     },
     {
         "sport": "basketball",
-        "fact": "The Chicago Bulls won six NBA championships during the 1990s with Michael Jordan.",
+        "content": "The Chicago Bulls won six NBA championships during the 1990s with Michael Jordan.",
         "keywords": [
             "bulls",
             "chicago bulls",
@@ -574,32 +576,32 @@
             "nba championships",
             "1990s"
         ],
-        "type": "who"
+        "intent": "who"
     },
     {
         "sport": "basketball",
-        "fact": "LeBron James is considered one of the best basketball players of his generation.",
+        "content": "LeBron James is considered one of the best basketball players of his generation.",
         "keywords": [
             "lebron",
             "lebron james",
             "best player",
             "generation"
         ],
-        "type": "who"
+        "intent": "who"
     },
     {
         "sport": "basketball",
-        "fact": "A dunk is a type of shot where a player jumps and forcefully scores by putting the ball through the hoop.",
+        "content": "A dunk is a type of shot where a player jumps and forcefully scores by putting the ball through the hoop.",
         "keywords": [
             "dunk",
             "jump",
             "score"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "basketball",
-        "fact": "A triple-double is a performance in which a player records double digits in three statistical categories (points, rebounds, assists).",
+        "content": "A triple-double is a performance in which a player records double digits in three statistical categories (points, rebounds, assists).",
         "keywords": [
             "points",
             "rebounds",
@@ -608,21 +610,21 @@
             "double digits",
             "stats"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "basketball",
-        "fact": "Dribbling is the act of bouncing the ball continuously while moving.",
+        "content": "Dribbling is the act of bouncing the ball continuously while moving.",
         "keywords": [
             "dribbling",
             "ball control",
             "movement"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "basketball",
-        "fact": "The NBA draft is an annual event where teams select eligible players for the upcoming season.",
+        "content": "The NBA draft is an annual event where teams select eligible players for the upcoming season.",
         "keywords": [
             "draft",
             "nba draft",
@@ -630,21 +632,21 @@
             "players",
             "annual"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "basketball",
-        "fact": "The 'and-one' is a play where a player is fouled while making a shot, and then gets one free throw.",
+        "content": "The 'and-one' is a play where a player is fouled while making a shot, and then gets one free throw.",
         "keywords": [
             "and-one",
             "foul",
             "free throw"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "basketball",
-        "fact": "The Boston Celtics and the Los Angeles Lakers have the most NBA championships, each with 17 titles.",
+        "content": "The Boston Celtics and the Los Angeles Lakers have the most NBA championships, each with 17 titles.",
         "keywords": [
             "celtics",
             "boston celtics",
@@ -652,11 +654,11 @@
             "17 titles",
             "nba championships"
         ],
-        "type": "who"
+        "intent": "who"
     },
     {
         "sport": "basketball",
-        "fact": "The NBA was founded in 1946 as the Basketball Association of America (BAA) before merging with the National Basketball League (NBL).",
+        "content": "The NBA was founded in 1946 as the Basketball Association of America (BAA) before merging with the National Basketball League (NBL).",
         "keywords": [
             "name",
             "founding",
@@ -665,22 +667,22 @@
             "1946",
             "merge"
         ],
-        "type": "when"
+        "intent": "when"
     },
     {
         "sport": "basketball",
-        "fact": "A player is disqualified if they accumulate six fouls in an NBA game.",
+        "content": "A player is disqualified if they accumulate six fouls in an NBA game.",
         "keywords": [
             "fouls",
             "disqualified",
             "six",
             "6 fouls"
         ],
-        "type": "when"
+        "intent": "when"
     },
     {
         "sport": "basketball",
-        "fact": "The basketball court is 28.65 meters long and 15.24 meters wide.",
+        "content": "The basketball court is 28.65 meters long and 15.24 meters wide.",
         "keywords": [
             "court",
             "size",
@@ -689,11 +691,11 @@
             "dimensions",
             "basketball court"
         ],
-        "type": "how long"
+        "intent": "how long"
     },
     {
         "sport": "basketball",
-        "fact": "The NBA MVP (Most Valuable Player) Award is given annually to the best player of the regular season.",
+        "content": "The NBA MVP (Most Valuable Player) Award is given annually to the best player of the regular season.",
         "keywords": [
             "mvp",
             "valuable",
@@ -701,11 +703,11 @@
             "award",
             "best player"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "basketball",
-        "fact": "A basketball team can have a maximum of 15 players on its roster, with 13 eligible for regular-season games.",
+        "content": "A basketball team can have a maximum of 15 players on its roster, with 13 eligible for regular-season games.",
         "keywords": [
             "team",
             "size",
@@ -713,52 +715,52 @@
             "15 players",
             "eligible players"
         ],
-        "type": "how many"
+        "intent": "how many"
     },
     {
         "sport": "basketball",
-        "fact": "The term 'assist' is used when a player passes the ball to a teammate who then scores a basket.",
+        "content": "The term 'assist' is used when a player passes the ball to a teammate who then scores a basket.",
         "keywords": [
             "assist",
             "pass",
             "score"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "basketball",
-        "fact": "A player can receive a personal foul or a technical foul, which can lead to free throws.",
+        "content": "A player can receive a personal foul or a technical foul, which can lead to free throws.",
         "keywords": [
             "personal foul",
             "technical foul",
             "free throw"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "basketball",
-        "fact": "The fastest recorded basketball game was played in under 1 hour and 30 minutes.",
+        "content": "The fastest recorded basketball game was played in under 1 hour and 30 minutes.",
         "keywords": [
             "fastest",
             "shortest",
             "fastest game",
             "recorded"
         ],
-        "type": "how long"
+        "intent": "how long"
     },
     {
         "sport": "basketball",
-        "fact": "The 'crossover dribble' is a move where a player quickly switches the ball between hands to deceive a defender.",
+        "content": "The 'crossover dribble' is a move where a player quickly switches the ball between hands to deceive a defender.",
         "keywords": [
             "crossover",
             "crossover dribble",
             "move"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "basketball",
-        "fact": "Kareem Abdul-Jabbar holds the record for the most points scored in NBA history.",
+        "content": "Kareem Abdul-Jabbar holds the record for the most points scored in NBA history.",
         "keywords": [
             "abdul-jabbar",
             "kareem abdul-jabbar",
@@ -766,23 +768,23 @@
             "nba",
             "nba history"
         ],
-        "type": "who"
+        "intent": "who"
     },
     
     {
         "sport": "tennis",
-        "fact": "Tennis is usually played in singles (one-on-one) or doubles (two-on-two) formats.",
+        "content": "Tennis is usually played in singles (one-on-one) or doubles (two-on-two) formats.",
         "keywords": [
             "singles",
             "doubles",
             "format",
             "played"
         ],
-        "type": "how"
+        "intent": "how"
     },
     {
         "sport": "tennis",
-        "fact": "The Grand Slams are the Australian Open, French Open, Wimbledon, and US Open.",
+        "content": "The Grand Slams are the Australian Open, French Open, Wimbledon, and US Open.",
         "keywords": [
             "major",
             "tournaments",
@@ -792,33 +794,33 @@
             "wimbledon",
             "us open"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "tennis",
-        "fact": "Wimbledon is the oldest tennis tournament, first held in 1877.",
+        "content": "Wimbledon is the oldest tennis tournament, first held in 1877.",
         "keywords": [
             "wimbledon",
             "oldest",
             "first",
             "1877"
         ],
-        "type": "when"
+        "intent": "when"
     },
     {
         "sport": "tennis",
-        "fact": "Matches are usually played as best of 3 or best of 5 sets.",
+        "content": "Matches are usually played as best of 3 or best of 5 sets.",
         "keywords": [
             "rounds",
             "sets",
             "best of 3",
             "best of 5"
         ],
-        "type": "how"
+        "intent": "how"
     },
     {
         "sport": "tennis",
-        "fact": "A set is won by winning at least 6 games with a 2-game margin.",
+        "content": "A set is won by winning at least 6 games with a 2-game margin.",
         "keywords": [
             "win condition",
             "set",
@@ -826,11 +828,11 @@
             "games",
             "margin"
         ],
-        "type": "how"
+        "intent": "how"
     },
     {
         "sport": "tennis",
-        "fact": "The scoring system in tennis goes: 0 (love), 15, 30, 40, and game.",
+        "content": "The scoring system in tennis goes: 0 (love), 15, 30, 40, and game.",
         "keywords": [
             "scoring",
             "system",
@@ -843,80 +845,80 @@
             "40",
             "forty"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "tennis",
-        "fact": "A deuce occurs when both players reach 40 points in a game.",
+        "content": "A deuce occurs when both players reach 40 points in a game.",
         "keywords": [
             "deuce",
             "40 points",
             "tie"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "tennis",
-        "fact": "A player must win two consecutive points from deuce to win the game.",
+        "content": "A player must win two consecutive points from deuce to win the game.",
         "keywords": [
             "deuce",
             "advantage",
             "win"
         ],
-        "type": "how"
+        "intent": "how"
     },
     {
         "sport": "tennis",
-        "fact": "The server switches every game between players.",
+        "content": "The server switches every game between players.",
         "keywords": [
             "server",
             "switch"
         ],
-        "type": "when"
+        "intent": "when"
     },
     {
         "sport": "tennis",
-        "fact": "A fault occurs when the serve doesn't land in the correct service box.",
+        "content": "A fault occurs when the serve doesn't land in the correct service box.",
         "keywords": [
             "fault",
             "serve",
             "service box"
         ],
-        "type": "how"
+        "intent": "how"
     },
     {
         "sport": "tennis",
-        "fact": "A double fault results in the loss of a point.",
+        "content": "A double fault results in the loss of a point.",
         "keywords": [
             "double fault",
             "serve",
             "point loss"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "tennis",
-        "fact": "A let is called when the serve touches the net but still lands in the service box.",
+        "content": "A let is called when the serve touches the net but still lands in the service box.",
         "keywords": [
             "let",
             "serve",
             "net"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "tennis",
-        "fact": "The ball must bounce once before hitting it in most cases, except for volleys.",
+        "content": "The ball must bounce once before hitting it in most cases, except for volleys.",
         "keywords": [
             "bounce",
             "volley",
             "rules"
         ],
-        "type": "how"
+        "intent": "how"
     },
     {
         "sport": "tennis",
-        "fact": "The tennis court has different surfaces: grass, clay, and hard.",
+        "content": "The tennis court has different surfaces: grass, clay, and hard.",
         "keywords": [
             "material",
             "court",
@@ -925,11 +927,11 @@
             "clay",
             "hard"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "tennis",
-        "fact": "Rafael Nadal is known as the 'King of Clay' for his dominance on clay courts.",
+        "content": "Rafael Nadal is known as the 'King of Clay' for his dominance on clay courts.",
         "keywords": [
             "nadal",
             "rafael nadal",
@@ -937,33 +939,33 @@
             "king of clay",
             "dominance"
         ],
-        "type": "who"
+        "intent": "who"
     },
     {
         "sport": "tennis",
-        "fact": "Roger Federer has won 20 Grand Slam titles.",
+        "content": "Roger Federer has won 20 Grand Slam titles.",
         "keywords": [
             "federer",
             "roger federer",
             "grand slam",
             "20 titles"
         ],
-        "type": "how many"
+        "intent": "how many"
     },
     {
         "sport": "tennis",
-        "fact": "Novak Djokovic holds the record for the most weeks ranked world No.1.",
+        "content": "Novak Djokovic holds the record for the most weeks ranked world No.1.",
         "keywords": [
             "djokovic",
             "novak djokovic",
             "rank",
             "record"
         ],
-        "type": "who"
+        "intent": "who"
     },
     {
         "sport": "tennis",
-        "fact": "Serena Williams is considered one of the greatest female players, with 23 Grand Slam titles.",
+        "content": "Serena Williams is considered one of the greatest female players, with 23 Grand Slam titles.",
         "keywords": [
             "serena",
             "serena williams",
@@ -971,63 +973,63 @@
             "greatest",
             "23 titles"
         ],
-        "type": "who"
+        "intent": "who"
     },
     {
         "sport": "tennis",
-        "fact": "Tennis was originally played with the palm of the hand, not rackets.",
+        "content": "Tennis was originally played with the palm of the hand, not rackets.",
         "keywords": [
             "origin",
             "history",
             "rackets",
             "hand"
         ],
-        "type": "how"
+        "intent": "how"
     },
     {
         "sport": "tennis",
-        "fact": "A rally is a continuous exchange of shots between players.",
+        "content": "A rally is a continuous exchange of shots between players.",
         "keywords": [
             "rally",
             "shots",
             "exchange"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "tennis",
-        "fact": "An ace is a serve that the opponent cannot touch or return.",
+        "content": "An ace is a serve that the opponent cannot touch or return.",
         "keywords": [
             "ace",
             "serve",
             "unreturned"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "tennis",
-        "fact": "A break point occurs when the receiver has a chance to win the game on the opponent’s serve.",
+        "content": "A break point occurs when the receiver has a chance to win the game on the opponent’s serve.",
         "keywords": [
             "break point",
             "serve",
             "receiver"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "tennis",
-        "fact": "Winning all four Grand Slam tournaments in a calendar year is called a 'Calendar Grand Slam'.",
+        "content": "Winning all four Grand Slam tournaments in a calendar year is called a 'Calendar Grand Slam'.",
         "keywords": [
             "calendar",
             "grand slam",
             "four",
             "4 tournaments"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "tennis",
-        "fact": "Tennis balls are pressurized to bounce correctly during play.",
+        "content": "Tennis balls are pressurized to bounce correctly during play.",
         "keywords": [
             "ball",
             "design",
@@ -1035,11 +1037,11 @@
             "pressure",
             "bounce"
         ],
-        "type": "how"
+        "intent": "how"
     },
     {
         "sport": "tennis",
-        "fact": "Professional tennis players often play over 60 matches a year.",
+        "content": "Professional tennis players often play over 60 matches a year.",
         "keywords": [
             "players",
             "matches",
@@ -1047,130 +1049,130 @@
             "year",
             "per year"
         ],
-        "type": "how many"
+        "intent": "how many"
     },
     {
         "sport": "tennis",
-        "fact": "Wheelchair tennis is a popular variation of the sport in the Paralympics.",
+        "content": "Wheelchair tennis is a popular variation of the sport in the Paralympics.",
         "keywords": [
             "wheelchair",
             "wheelchair tennis",
             "paralympics",
             "variation"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "tennis",
-        "fact": "Tennis was reintroduced to the Olympics in 1988 after being dropped for decades.",
+        "content": "Tennis was reintroduced to the Olympics in 1988 after being dropped for decades.",
         "keywords": [
             "olympics",
             "reintroduction",
             "1988"
         ],
-        "type": "when"
+        "intent": "when"
     },
     {
         "sport": "tennis",
-        "fact": "Tennis is believed to have originated in France during the 12th century.",
+        "content": "Tennis is believed to have originated in France during the 12th century.",
         "keywords": [
             "origin",
             "france",
             "12th century"
         ],
-        "type": "when"
+        "intent": "when"
     },
     {
         "sport": "tennis",
-        "fact": "Players must change sides of the court after every odd-numbered game.",
+        "content": "Players must change sides of the court after every odd-numbered game.",
         "keywords": [
             "sides",
             "change sides",
             "court",
             "odd game"
         ],
-        "type": "how"
+        "intent": "how"
     },
     {
         "sport": "tennis",
-        "fact": "The umpire sits in a high chair to oversee the match and make final decisions.",
+        "content": "The umpire sits in a high chair to oversee the match and make final decisions.",
         "keywords": [
             "umpire",
             "chair",
             "decisions"
         ],
-        "type": "who"
+        "intent": "who"
     },
     {
         "sport": "tennis",
-        "fact": "Line judges assist the umpire in calling balls in or out.",
+        "content": "Line judges assist the umpire in calling balls in or out.",
         "keywords": [
             "line judge",
             "calls",
             "in or out"
         ],
-        "type": "who"
+        "intent": "who"
     },
     {
         "sport": "tennis",
-        "fact": "Tennis rackets are made of lightweight materials like graphite or carbon fiber.",
+        "content": "Tennis rackets are made of lightweight materials like graphite or carbon fiber.",
         "keywords": [
             "racket",
             "material",
             "graphite"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "tennis",
-        "fact": "The net in tennis is 3 feet high at the center.",
+        "content": "The net in tennis is 3 feet high at the center.",
         "keywords": [
             "net",
             "height",
             "3 feet"
         ],
-        "type": "how many"
+        "intent": "how many"
     },
     {
         "sport": "tennis",
-        "fact": "Topspin is used to help the ball dip into the court during aggressive shots.",
+        "content": "Topspin is used to help the ball dip into the court during aggressive shots.",
         "keywords": [
             "topspin",
             "shot",
             "technique"
         ],
-        "type": "how"
+        "intent": "how"
     },
     {
         "sport": "tennis",
-        "fact": "A lob is a shot that goes high over the opponent’s head.",
+        "content": "A lob is a shot that goes high over the opponent’s head.",
         "keywords": [
             "lob",
             "shot",
             "high ball"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "tennis",
-        "fact": "The Davis Cup is an international team competition in men’s tennis.",
+        "content": "The Davis Cup is an international team competition in men’s tennis.",
         "keywords": [
             "davis",
             "davis cup",
             "team",
             "men"
         ],
-        "type": "what"
+        "intent": "what"
     },
     {
         "sport": "tennis",
-        "fact": "The Fed Cup, now called the Billie Jean King Cup, is the Davis Cup equivalent for women.",
+        "content": "The Fed Cup, now called the Billie Jean King Cup, is the Davis Cup equivalent for women.",
         "keywords": [
             "fed cup",
             "billie jean",
             "women",
             "team"
         ],
-        "type": "what"
+        "intent": "what"
     }
 ]

@@ -3,10 +3,9 @@
         "sport": "soccer",
         "content": "Soccer is the most popular sport in the world, with over 4 billion fans globally.",
         "keywords": [
-            "most popular",
-            "fans",
-            "global",
-            "worldwide"
+            
+            "most popular", "fans", "global", "worldwide", "famous", "largest fanbase", "soccer popularity", "popular sport"
+
         ],
         "intent": "how many"
     },
@@ -14,12 +13,7 @@
         "sport": "soccer",
         "content": "A standard soccer match is 90 minutes long, divided into two halves of 45 minutes.",
         "keywords": [
-            "duration",
-            "match duration",
-            "time",
-            "game time",
-            "halves",
-            "90 minutes"
+            "duration", "match duration", "time", "game time", "halves", "90 minutes", "how long", "full match", "length of game"
         ],
         "intent": "how long"
     },
@@ -27,20 +21,25 @@
         "sport": "soccer",
         "content": "Each soccer team has 11 players on the field at a time.",
         "keywords": [
-            "players",
-            "team size",
-            "11 players"
+            "players", "team size", "11 players", "on field", "number of players", "squad size", "team count"
+
         ],
         "intent": "how many"
     },
     {
         "sport": "soccer",
+        "content": "Each soccer team has 11 players on the field at a time.",
+        "keywords": [
+            "team size", "11 players", "on field", "players in team", "team composition", "team structure"
+        ],
+        "intent": "what"
+    },
+    {
+        "sport": "soccer",
         "content": "The FIFA World Cup is the most prestigious soccer tournament, held every 4 years.",
         "keywords": [
-            "world cup",
-            "fifa",
-            "tournament",
-            "4 years"
+            "world cup", "fifa", "tournament", "4 years", "every four years", "biggest tournament", "global event", "soccer world cup", "prestigious competition"
+
         ],
         "intent": "what"
     },
@@ -48,10 +47,7 @@
         "sport": "soccer",
         "content": "The first FIFA World Cup was held in Uruguay in 1930.",
         "keywords": [
-            "first",
-            "world cup",
-            "1930",
-            "uruguay"
+            "first", "world cup", "1930", "uruguay", "history", "start year", "beginning", "inaugural", "when started"
         ],
         "intent": "when"
     },
@@ -59,9 +55,8 @@
         "sport": "soccer",
         "content": "A goal is scored when the entire ball crosses the goal line between the goalposts.",
         "keywords": [
-            "goal",
-            "scoring",
-            "goal line"
+            "goal", "scoring", "goal line", "scored", "how goal", "when is goal", "ball in net", "how to score", "score rule"
+
         ],
         "intent": "how"
     },
@@ -69,9 +64,7 @@
         "sport": "soccer",
         "content": "The offside rule prevents players from gaining an unfair advantage by being too close to the opponent’s goal.",
         "keywords": [
-            "offside",
-            "rule",
-            "advantage"
+            "offside", "rule", "advantage", "offside explained", "offside position", "offside rule", "player position", "unfair advantage", "offside meaning"
         ],
         "intent": "what"
     },
@@ -79,10 +72,8 @@
         "sport": "soccer",
         "content": "Yellow cards are used to caution players for misconduct.",
         "keywords": [
-            "yellow card",
-            "caution",
-            "warning",
-            "minor"
+            "yellow card", "caution", "warning", "minor", "misconduct", "booking", "referee warning", "disciplinary", "yellow"
+
         ],
         "intent": "what"
     },
@@ -90,10 +81,8 @@
         "sport": "soccer",
         "content": "Red cards are used to eject players from the game for serious offenses.",
         "keywords": [
-            "red card",
-            "ejection",
-            "foul",
-            "serious"
+            "red card", "ejection", "foul", "serious", "sent off", "dismissal", "player removed", "dangerous play", "carded"
+
         ],
         "intent": "what"
     },
@@ -101,10 +90,8 @@
         "sport": "soccer",
         "content": "The ball used in soccer must be spherical and made of suitable material.",
         "keywords": [
-            "ball",
-            "equipment",
-            "shape",
-            "material"
+            "ball", "equipment", "shape", "material", "round", "spherical", "soccer ball", "game ball", "football shape"
+
         ],
         "intent": "what"
     },
@@ -112,11 +99,8 @@
         "sport": "soccer",
         "content": "Soccer is called 'football' in most countries outside of North America.",
         "keywords": [
-            "football",
-            "soccer name",
-            "regional name",
-            "another name",
-            "alternative"
+            "football", "soccer name", "regional name", "another name", "alternative", "called", "different name", "outside usa", "football vs soccer"
+
         ],
         "intent": "what"
     },
@@ -124,10 +108,8 @@
         "sport": "soccer",
         "content": "A hat-trick occurs when a player scores three goals in a single game.",
         "keywords": [
-            "hat-trick",
-            "three",
-            "3 goals",
-            "one match"
+            "hat-trick", "three", "3 goals", "one match", "score three", "triple", "3 times", "three times", "three goals"
+
         ],
         "intent": "what"
     },
@@ -135,9 +117,8 @@
         "sport": "soccer",
         "content": "Penalty kicks are awarded for fouls committed inside the penalty box.",
         "keywords": [
-            "penalty",
-            "penalty kick",
-            "penalty box"
+            "penalty", "penalty kick", "penalty box", "foul inside box", "spot kick", "inside area", "foul in box", "awarded penalty"
+
         ],
         "intent": "what"
     },
@@ -145,9 +126,8 @@
         "sport": "soccer",
         "content": "The goalkeeper is the only player allowed to use their hands, and only within the penalty area.",
         "keywords": [
-            "goalkeeper",
-            "hands",
-            "penalty area"
+            "goalkeeper", "hands", "penalty area", "keeper", "goalie", "use hands", "in box", "only player", "inside area"
+
         ],
         "intent": "who"
     },
@@ -155,9 +135,8 @@
         "sport": "soccer",
         "content": "Substitutions allow teams to replace tired or injured players during a match.",
         "keywords": [
-            "substitution",
-            "replace",
-            "players"
+            "substitution", "replace", "swap player", "change player", "sub", "bench", "bring on", "switch players", "player change"
+
         ],
         "intent": "what"
     },
@@ -165,9 +144,8 @@
         "sport": "soccer",
         "content": "Extra time is used when a knockout match ends in a draw.",
         "keywords": [
-            "extra time",
-            "draw",
-            "knockout"
+            "extra time", "draw", "knockout", "tie", "overtime", "added time", "after 90 minutes", "extension", "match tied"
+
         ],
         "intent": "when"
     },
@@ -175,10 +153,8 @@
         "sport": "soccer",
         "content": "Penalty shootouts decide the winner when extra time ends in a draw.",
         "keywords": [
-            "penalty",
-            "penalty shootout",
-            "tiebreak",
-            "draw"
+            "penalty", "penalty shootout", "tiebreak", "draw", "shootout", "decide winner", "penalties", "spot kicks", "tie resolution"
+
         ],
         "intent": "what"
     },
@@ -217,9 +193,8 @@
         "sport": "soccer",
         "content": "The Premier League is the top professional soccer league in England.",
         "keywords": [
-            "premier league",
-            "england",
-            "top league"
+            "premier league", "england", "top league", "epl", "english league", "best league", "football league", "uk league"
+
         ],
         "intent": "what"
     },
@@ -227,10 +202,8 @@
         "sport": "soccer",
         "content": "VAR (Video Assistant Referee) helps referees review key decisions.",
         "keywords": [
-            "var",
-            "video referee",
-            "replay",
-            "decision"
+            "var", "video referee", "replay", "decision", "video review", "referee help", "technology", "offside check", "penalty review"
+
         ],
         "intent": "what"
     },
@@ -238,9 +211,8 @@
         "sport": "soccer",
         "content": "Soccer was first included in the Olympics in 1900 for men and 1996 for women.",
         "keywords": [
-            "olympics",
-            "soccer inclusion",
-            "years"
+            "olympics", "soccer inclusion", "years", "when added", "start year", "men soccer", "women soccer", "history olympics"
+
         ],
         "intent": "when"
     },
@@ -248,22 +220,27 @@
         "sport": "soccer",
         "content": "The standard soccer pitch is about 100 to 110 meters long.",
         "keywords": [
-            "size",
-            "long",
-            "big",
-            "pitch size",
-            "field length",
-            "dimensions"
+            "size", "long", "big", "pitch size", "field length", "dimensions", "how long", "soccer field", "field size"
+
         ],
         "intent": "how long"
     },
     {
         "sport": "soccer",
+        "content": "The standard soccer pitch is about 100 to 110 meters long.",
+        "keywords": [
+            "size", "long", "big", "pitch size", "field length", "dimensions", "how long", "soccer field", "field size"
+
+        ],
+        "intent": "what"
+
+    },
+    {
+        "sport": "soccer",
         "content": "The captain wears an armband and leads the team on the field.",
         "keywords": [
-            "captain",
-            "armband",
-            "leader"
+            "captain", "armband", "leader", "team leader", "who leads", "match captain", "wears band", "captain duties"
+
         ],
         "intent": "who"
     },
@@ -271,10 +248,8 @@
         "sport": "soccer",
         "content": "Throw-ins are used to restart play when the ball goes out over the sidelines.",
         "keywords": [
-            "throw-in",
-            "outside",
-            "restart",
-            "sideline"
+            "throw-in", "outside", "restart", "sideline", "ball out", "throw", "out of bounds", "line throw", "how restart"
+
         ],
         "intent": "what"
     },
@@ -282,10 +257,8 @@
         "sport": "soccer",
         "content": "Corners are awarded when the defending team last touches the ball before it crosses their goal line.",
         "keywords": [
-            "corner",
-            "corner kick",
-            "goal line",
-            "defending team"
+            "corner", "corner kick", "goal line", "defending team", "corner awarded", "ball out near goal", "last touch", "corner rule"
+
         ],
         "intent": "what"
     },
@@ -293,10 +266,8 @@
         "sport": "soccer",
         "content": "Free kicks are awarded after fouls, with direct and indirect types.",
         "keywords": [
-            "free kick",
-            "fouls",
-            "direct",
-            "indirect"
+            "free kick", "fouls", "direct", "indirect", "kick after foul", "restart foul", "soccer foul", "free shot", "types of free kick"
+
         ],
         "intent": "what"
     },
@@ -304,10 +275,8 @@
         "sport": "soccer",
         "content": "Handballs occur when a player deliberately handles the ball with their hand or arm.",
         "keywords": [
-            "hand",
-            "handball",
-            "foul",
-            "deliberate"
+            "hand", "handball", "foul", "deliberate", "illegal touch", "touch with hand", "ball hand", "arm touch", "hand rule"
+
         ],
         "intent": "what"
     },
@@ -315,9 +284,8 @@
         "sport": "soccer",
         "content": "The referee is in charge of enforcing the rules during a match.",
         "keywords": [
-            "referee",
-            "rules",
-            "match official"
+            "referee", "rules", "match official", "who controls", "who manages game", "game official", "main referee", "enforce rules"
+
         ],
         "intent": "who"
     },
@@ -325,10 +293,8 @@
         "sport": "soccer",
         "content": "Assistant referees help judge offsides and out-of-bounds calls.",
         "keywords": [
-            "assistant",
-            "assistant referee",
-            "offside",
-            "calls"
+            "assistant", "assistant referee", "offside", "calls", "linesman", "side referee", "out of play", "flag official", "who helps referee"
+
         ],
         "intent": "who"
     },
@@ -336,11 +302,8 @@
         "sport": "soccer",
         "content": "A clean sheet refers to a game in which the goalkeeper allows no goals.",
         "keywords": [
-            "clean",
-            "clean sheet",
-            "no goals",
-            "zero",
-            "goalkeeper"
+            "clean", "clean sheet", "no goals", "zero", "goalkeeper", "shutout", "kept out", "no score", "goalie clean"
+
         ],
         "intent": "what"
     },
@@ -348,9 +311,8 @@
         "sport": "soccer",
         "content": "A brace means a player scored two goals in one game.",
         "keywords": [
-            "brace",
-            "two goals",
-            "one match"
+            "brace", "two goals", "one match", "double goal", "two times", "scored twice", "twice", "goal brace"
+
         ],
         "intent": "what"
     },
@@ -358,9 +320,8 @@
         "sport": "soccer",
         "content": "A golden goal used to end a match as soon as one team scored in extra time, but it is no longer used.",
         "keywords": [
-            "golden goal",
-            "sudden death",
-            "extra time"
+            "golden goal", "sudden death", "extra time", "end game early", "first goal wins", "old rule", "match ending rule", "extra time goal"
+
         ],
         "intent": "what"
     },
@@ -368,9 +329,8 @@
         "sport": "soccer",
         "content": "A bicycle kick is an acrobatic move where a player kicks the ball backward over their own head.",
         "keywords": [
-            "bicycle kick",
-            "acrobatic",
-            "strike"
+            "bicycle kick", "acrobatic", "strike", "overhead kick", "scissor kick", "flip kick", "backwards kick", "kick in air"
+
         ],
         "intent": "what"
     },
@@ -378,10 +338,8 @@
         "sport": "soccer",
         "content": "A derby refers to a match between two local rival teams.",
         "keywords": [
-            "derby",
-            "rivalry",
-            "local",
-            "local teams"
+            "derby", "rivalry", "local", "local teams", "rival match", "city rivalry", "same city teams", "big rivalry"
+
         ],
         "intent": "what"
     },
@@ -389,9 +347,8 @@
         "sport": "soccer",
         "content": "FIFA stands for Fédération Internationale de Football Association.",
         "keywords": [
-            "fifa",
-            "acronym",
-            "organization"
+            "fifa", "acronym", "organization", "governing body", "football federation", "full form", "fifa meaning", "fifa stands for"
+
         ],
         "intent": "what"
     },
@@ -399,9 +356,8 @@
         "sport": "soccer",
         "content": "The Ballon d'Or is awarded annually to the best male footballer.",
         "keywords": [
-            "ballon d'or",
-            "award",
-            "best player"
+            "ballon d'or", "award", "best player", "player of the year", "top footballer", "golden ball", "annual football award"
+
         ],
         "intent": "what"
     },
@@ -409,10 +365,8 @@
         "sport": "soccer",
         "content": "The Women's World Cup was first held in 1991.",
         "keywords": [
-            "women",
-            "world cup",
-            "first",
-            "1991"
+            "women", "world cup", "first", "1991", "when started", "female football", "start year", "beginning", "history"
+
         ],
         "intent": "when"
     },

@@ -1,7 +1,6 @@
 import DatasetLoader._
 import ResourceLoader._
 import Quiz._
-
 import scala.util.Random
 
 

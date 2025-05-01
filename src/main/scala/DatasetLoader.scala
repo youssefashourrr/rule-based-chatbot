@@ -3,7 +3,6 @@ import scala.io.Source
 import upickle.default._
 
 
-
 case class Athlete(
     id: Int,
     name: String,
@@ -35,9 +34,49 @@ object Fact {
 }
 
 
+case class MultipleChoice(
+    sport: String,
+    content: String,
+    options: List[String],
+    answer: String
+)
+
+object MultipleChoice {
+    implicit val rw: ReadWriter[MultipleChoice] = macroRW
+}
+
+
+case class FreeResponse(
+    sport: String,
+    content: String,
+    keywords: List[String]
+)
+
+object FreeResponse {
+    implicit val rw: ReadWriter[FreeResponse] = macroRW
+}
+
+
 object DatasetLoader {
-    val olympicsData: List[Athlete] = loadOlympicsData()
+    // val olympicsData: List[Athlete] = loadOlympicsData()
     val sportFacts: List[Fact] = loadSportFacts()
+    val mcq: List[MultipleChoice] = loadMCQ()
+    val frq: List[FreeResponse] = loadFRQ();
+
+    private def loadSportFacts(): List[Fact] = {
+        val source = Source.fromResource("sports_facts.json").mkString
+        read[List[Fact]](source)
+    }
+
+    private def loadMCQ(): List[MultipleChoice] = {
+        val source = Source.fromResource("mcq_bank.json").mkString
+        read[List[MultipleChoice]](source)
+    }
+
+    private def loadFRQ(): List[FreeResponse] = {
+        val source = Source.fromResource("frq_bank.json").mkString
+        read[List[FreeResponse]](source)
+    }
 
     private def loadOlympicsData(): List[Athlete] = {
         val source = CSVReader.open(Source.fromResource("olympics.csv").bufferedReader())
@@ -70,10 +109,5 @@ object DatasetLoader {
         source.close()
 
         athletes
-    }
-
-    private def loadSportFacts(): List[Fact] = {
-        val source = Source.fromResource("sports_facts.json").mkString
-        read[List[Fact]](source)
     }
 }

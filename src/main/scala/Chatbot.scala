@@ -57,7 +57,14 @@ object Chatbot {
         val knownIntents: Set[String] = Set("what", "when", "how", "how many", "how long", "who", "where")
 
         val matchedSports = tokens.filter(token => knownSports.contains(token))
-        val matchedIntents = tokens.filter(token => knownIntents.contains(token))
+
+        var matchedIntents = tokens.filter(token => knownIntents.contains(token))
+
+        if (matchedIntents.contains("how") &&
+            (matchedIntents.contains("how many") || matchedIntents.contains("how long"))) {
+            matchedIntents = matchedIntents.filterNot(_ == "how")
+        }
+
 
         val _sport: Option[String] = matchedSports.distinct match {
             case Nil => Some("no sport")

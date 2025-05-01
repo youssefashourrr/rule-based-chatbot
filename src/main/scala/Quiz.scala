@@ -44,7 +44,7 @@ object Quiz
                     }
         println(question)
         ans match
-            case Nil => Nil
+            case Nil => ()
             case head::tail => displayAns(ans,1)
 
     def evaluateQuizAnswer(userAnswer: String): Boolean = ??? //Yet to be done using an API

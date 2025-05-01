@@ -1,6 +1,7 @@
 import com.github.tototoshi.csv._
-import scala.io.Source
 import upickle.default._
+import scala.io.Source
+
 
 
 case class Athlete(

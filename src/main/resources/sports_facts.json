@@ -374,35 +374,21 @@
     {
         "sport": "basketball",
         "content": "Basketball is one of the most popular sports in the world, with over 2.4 billion fans.",
-        "keywords": [
-            "popular",
-            "most popular",
-            "fans",
-            "global",
-            "worldwide"
+        "keywords": [ "popular", "most popular", "fans", "global", "world", "worldwide"
         ],
         "intent": "how many"
     },
     {
         "sport": "basketball",
         "content": "A standard basketball game is divided into four quarters, each lasting 12 minutes.",
-        "keywords": [
-            "quarters",
-            "duration",
-            "time",
-            "game duration",
-            "12 minutes"
+        "keywords": [ "quarters", "duration", "time", "game duration", "12 minutes","match","play"
         ],
         "intent": "how long"
     },
     {
         "sport": "basketball",
         "content": "Each basketball team has 5 players on the court at a time.",
-        "keywords": [
-            "players",
-            "team",
-            "team size",
-            "5 players"
+        "keywords": [ "players", "team", "team size", "5 players", "number"
         ],
         "intent": "how many"
     },
@@ -410,181 +396,105 @@
         "sport": "basketball",
         "content": "The NBA (National Basketball Association) is the most popular professional basketball league.",
         "keywords": [
-            "nba",
-            "league",
-            "biggest",
-            "basketball",
-            "professional"
+            "nba", "league", "biggest", "basketball", "professional" ,"organization","association"
         ],
         "intent": "what"
     },
     {
         "sport": "basketball",
         "content": "The first NBA season was held in 1946.",
-        "keywords": [
-            "first",
-            "nba",
-            "season",
-            "year",
-            "1946"
+        "keywords": ["first", "nba", "season", "year", "1946"
         ],
         "intent": "when"
     },
     {
         "sport": "basketball",
         "content": "A basketball game is won by scoring more points than the opposing team.",
-        "keywords": [
-            "win",
-            "score",
-            "points"
+        "keywords": ["win", "score", "points","beat","winning"
         ],
         "intent": "what"
     },
     {
         "sport": "basketball",
         "content": "A player scores two points by making a basket from anywhere inside the three-point line.",
-        "keywords": [
-            "points",
-            "two",
-            "2 points",
-            "basket",
-            "inside",
-            "inside line"
+        "keywords": ["points", "two", "2 points", "basket", "inside", "inside line"
         ],
         "intent": "how"
     },
     {
         "sport": "basketball",
         "content": "A player scores three points by making a basket from beyond the three-point line.",
-        "keywords": [
-            "points",
-            "three",
-            "3 points",
-            "three-point line",
-            "long shot"
+        "keywords": ["points", "three", "3 points", "three-point line", "long shot"
         ],
         "intent": "how"
     },
     {
         "sport": "basketball",
         "content": "Free throws are awarded after a foul, and each successful free throw is worth one point.",
-        "keywords": [
-            "free throw",
-            "foul",
-            "1 point"
+        "keywords": ["free throw", "foul", "1 point","penalty","award"
         ],
         "intent": "what"
     },
     {
         "sport": "basketball",
         "content": "The shot clock is 24 seconds, meaning a team must attempt a shot within that time frame.",
-        "keywords": [
-            "shot clock",
-            "24 seconds",
-            "time limit"
+        "keywords": ["shot clock", "24 seconds", "time limit",""
         ],
         "intent": "how long"
     },
     {
         "sport": "basketball",
         "content": "The NBA All-Star Game is an annual exhibition game featuring the league's top players.",
-        "keywords": [
-            "star",
-            "all-star game",
-            "exhibition",
-            "top",
-            "top players"
+        "keywords": ["star", "all-star game", "exhibition", "top", "top players"
         ],
         "intent": "what"
     },
     {
         "sport": "basketball",
         "content": "The NBA Finals is the championship series of the NBA, played between the winners of the Eastern and Western Conferences.",
-        "keywords": [
-            "finals",
-            "nba finals",
-            "championship",
-            "conference"
+        "keywords": ["finals", "nba finals", "championship", "conference","series","eastern","western","winners"
         ],
         "intent": "what"
     },
     {
         "sport": "basketball",
         "content": "Michael Jordan is widely regarded as the greatest basketball player of all time.",
-        "keywords": [
-            "goat",
-            "greatest",
-            "michael jordan",
-            "player",
-            "greatest player"
+        "keywords": ["goat", "greatest", "michael jordan", "player", "greatest player","all time"
         ],
         "intent": "who"
     },
     {
         "sport": "basketball",
         "content": "The Chicago Bulls won six NBA championships during the 1990s with Michael Jordan.",
-        "keywords": [
-            "bulls",
-            "chicago bulls",
-            "nba",
-            "nba championships",
-            "1990s"
-        ],
-        "intent": "who"
-    },
-    {
-        "sport": "basketball",
-        "content": "LeBron James is considered one of the best basketball players of his generation.",
-        "keywords": [
-            "lebron",
-            "lebron james",
-            "best player",
-            "generation"
+        "keywords": ["bulls", "chicago bulls", "nba", "nba championships", "1990s", "6","90s","six","best team"
         ],
         "intent": "who"
     },
     {
         "sport": "basketball",
         "content": "A dunk is a type of shot where a player jumps and forcefully scores by putting the ball through the hoop.",
-        "keywords": [
-            "dunk",
-            "jump",
-            "score"
+        "keywords": ["dunk", "jump", "score","hope"
         ],
         "intent": "what"
     },
     {
         "sport": "basketball",
         "content": "A triple-double is a performance in which a player records double digits in three statistical categories (points, rebounds, assists).",
-        "keywords": [
-            "points",
-            "rebounds",
-            "assists",
-            "triple-double",
-            "double digits",
-            "stats"
+        "keywords": ["points","records", "rebounds", "assists", "triple-double", "double digits", "stats","statistics","preformance"
         ],
         "intent": "what"
     },
     {
         "sport": "basketball",
         "content": "Dribbling is the act of bouncing the ball continuously while moving.",
-        "keywords": [
-            "dribbling",
-            "ball control",
-            "movement"
+        "keywords": ["dribbling", "ball control", "movement","bouncing"
         ],
         "intent": "what"
     },
     {
         "sport": "basketball",
         "content": "The NBA draft is an annual event where teams select eligible players for the upcoming season.",
-        "keywords": [
-            "draft",
-            "nba draft",
-            "selection",
-            "players",
-            "annual"
+        "keywords": ["draft", "nba draft", "selection", "players", "annual","select","event"
         ],
         "intent": "what"
     },
@@ -592,135 +502,84 @@
         "sport": "basketball",
         "content": "The 'and-one' is a play where a player is fouled while making a shot, and then gets one free throw.",
         "keywords": [
-            "and-one",
-            "foul",
-            "free throw"
+            "and-one", "foul", "free throw"
         ],
         "intent": "what"
     },
     {
         "sport": "basketball",
         "content": "The Boston Celtics and the Los Angeles Lakers have the most NBA championships, each with 17 titles.",
-        "keywords": [
-            "celtics",
-            "boston celtics",
-            "lakers",
-            "17 titles",
-            "nba championships"
+        "keywords": ["celtics", "boston celtics", "lakers", "17 titles", "nba championships","teams","los angeles"
         ],
         "intent": "who"
     },
     {
         "sport": "basketball",
         "content": "The NBA was founded in 1946 as the Basketball Association of America (BAA) before merging with the National Basketball League (NBL).",
-        "keywords": [
-            "name",
-            "founding",
-            "nba",
-            "nba history",
-            "1946",
-            "merge"
+        "keywords": ["name", "founding", "nba", "nba history", "1946", "merge","origin","history","founded"
         ],
         "intent": "when"
     },
     {
         "sport": "basketball",
         "content": "A player is disqualified if they accumulate six fouls in an NBA game.",
-        "keywords": [
-            "fouls",
-            "disqualified",
-            "six",
-            "6 fouls"
+        "keywords": ["fouls", "disqualified", "six", "6 fouls"
         ],
         "intent": "when"
     },
     {
         "sport": "basketball",
         "content": "The basketball court is 28.65 meters long and 15.24 meters wide.",
-        "keywords": [
-            "court",
-            "size",
-            "big",
-            "court size",
-            "dimensions",
-            "basketball court"
+        "keywords": ["court", "size", "big", "court size", "dimensions", "basketball court","length"
         ],
         "intent": "how long"
     },
     {
         "sport": "basketball",
         "content": "The NBA MVP (Most Valuable Player) Award is given annually to the best player of the regular season.",
-        "keywords": [
-            "mvp",
-            "valuable",
-            "nba mvp",
-            "award",
-            "best player"
+        "keywords": ["mvp", "valuable", "nba mvp", "award", "best player","annual","best player"
         ],
         "intent": "what"
     },
     {
         "sport": "basketball",
         "content": "A basketball team can have a maximum of 15 players on its roster, with 13 eligible for regular-season games.",
-        "keywords": [
-            "team",
-            "size",
-            "team roster",
-            "15 players",
-            "eligible players"
+        "keywords": ["team", "size", "team roster", "15 players", "eligible players","maximum"
         ],
-        "intent": "how many"
+        "intent": "what"
     },
     {
         "sport": "basketball",
         "content": "The term 'assist' is used when a player passes the ball to a teammate who then scores a basket.",
-        "keywords": [
-            "assist",
-            "pass",
-            "score"
+        "keywords": ["assist", "pass", "score","help"
         ],
         "intent": "what"
     },
     {
         "sport": "basketball",
         "content": "A player can receive a personal foul or a technical foul, which can lead to free throws.",
-        "keywords": [
-            "personal foul",
-            "technical foul",
-            "free throw"
+        "keywords": ["personal foul", "technical foul", "free throw","fouled","receive"
         ],
         "intent": "what"
     },
     {
         "sport": "basketball",
         "content": "The fastest recorded basketball game was played in under 1 hour and 30 minutes.",
-        "keywords": [
-            "fastest",
-            "shortest",
-            "fastest game",
-            "recorded"
+        "keywords": ["fastest", "shortest", "fastest game", "recorded"
         ],
         "intent": "how long"
     },
     {
         "sport": "basketball",
         "content": "The 'crossover dribble' is a move where a player quickly switches the ball between hands to deceive a defender.",
-        "keywords": [
-            "crossover",
-            "crossover dribble",
-            "move"
+        "keywords": ["crossover", "crossover dribble", "move","two hands"
         ],
         "intent": "what"
     },
     {
         "sport": "basketball",
         "content": "Kareem Abdul-Jabbar holds the record for the most points scored in NBA history.",
-        "keywords": [
-            "abdul-jabbar",
-            "kareem abdul-jabbar",
-            "most points",
-            "nba",
-            "nba history"
+        "keywords": ["abdul-jabbar", "kareem abdul-jabbar", "most points", "nba", "nba history","records"
         ],
         "intent": "who"
     },

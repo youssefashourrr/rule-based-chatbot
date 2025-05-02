@@ -1,11 +1,11 @@
 import DatasetLoader._
 import ResourceLoader._
-import Quiz._
 import scala.util.Random
 
 
 object Chatbot {
     private var state: String = ""
+    private val quiz = Quiz
 
     def getState: String = state;
     
@@ -114,4 +114,6 @@ object Chatbot {
                 "Something went wrong while understanding your question. Please try again."
         }
     }
+
+    def getQuiz(): Quiz.type = quiz
 }

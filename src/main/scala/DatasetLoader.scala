@@ -21,6 +21,10 @@ case class Athlete(
     medal: Option[String]
 )
 
+trait Question {
+    def sport: String
+    def content:String
+}
 
 case class Fact(
     sport: String,
@@ -39,7 +43,7 @@ case class MultipleChoice(
     content: String,
     options: List[String],
     answer: String
-)
+) extends Question
 
 object MultipleChoice {
     implicit val rw: ReadWriter[MultipleChoice] = macroRW
@@ -50,7 +54,7 @@ case class FreeResponse(
     sport: String,
     content: String,
     keywords: List[String]
-)
+)extends Question
 
 object FreeResponse {
     implicit val rw: ReadWriter[FreeResponse] = macroRW

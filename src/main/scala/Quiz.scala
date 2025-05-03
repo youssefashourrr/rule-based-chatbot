@@ -1,53 +1,35 @@
 import com.github.tototoshi.csv.*
 import scala.annotation.tailrec
 import scala.util.Random
-import scala.io.StdIn
+import scala.jdk.CollectionConverters._
+import java.util.Collections
+import DatasetLoader._
 
 object Quiz
 {
-    @tailrec def selectQuizQuestions(mode:Boolean, result:Int = 0,numberQuestions:Int): Unit =
-        val rows = CSVReader.open("data.csv").all()
-        val randRow = rows(Random.nextInt(rows.length))
-        val question = randRow.head
-        val ans = randRow.tail
-        mode match
-            case true => presentQuizQuestion(question)
-            case false => presentQuizQuestion(question,ans)
+    private var questionChosen: Option[Question] = None
+    def selectQuizQuestions(category:String,mode:Boolean): (String,java.util.List[String]) =
+        val questionBank = if(mode) mcq else frq
+        val questionsCategory = questionBank.filter(_.sport == category)
+        val randomQuestion = Random.shuffle(questionsCategory).head
+        questionChosen = Some(randomQuestion)
+        presentQuestion(randomQuestion)
 
-        val userInput: String = StdIn.readLine()
-        var updatedResult = result
-        evaluateQuizAnswer(userInput) match
-            case true =>
-                {
-                    println("Correct Answer")
-                    updatedResult = updatedResult+1
-                }
-            case false => println("Incorrect Answer")
+    private def presentQuestion(question:Question): (String,java.util.List[String]) =
+        question match
+            case mc:MultipleChoice => (mc.content,mc.options.asJava)
+            case fr:FreeResponse => (fr.content,java.util.Collections.emptyList())
 
-        println("Would like to Continue")
-        val cont: String = StdIn.readLine()
+    def evaluateQuizAnswer(userAnswer:String): Boolean =
+        questionChosen match
+            case Some(mc: MultipleChoice) => verifyMCQ(userAnswer)
+            case Some(fr: FreeResponse) => verifyFr(userAnswer)
 
-        //cont.map() +ve or -ve with cases
-        // gets whether multiple choice or input text
-        // if false summarize
-        // true recurse
-        selectQuizQuestions(mode,updatedResult,numberQuestions+1)
+    private def verifyMCQ(userAnswer: String):Boolean=
+        questionChosen match
+            case Some(mc:MultipleChoice) => mc.answer == userAnswer
+            case _ => false
 
-    def presentQuizQuestion(question: String,ans:List[String]=Nil): Unit =
-        def displayAns(strings: List[String], i: Int):Unit=
-            i match
-                case 5 => return
-                case _ =>
-                    {
-                        println(i.toString +":" + strings.head)
-                        displayAns(strings.tail,i+1)
-                    }
-        println(question)
-        ans match
-            case Nil => ()
-            case head::tail => displayAns(ans,1)
-
-    def evaluateQuizAnswer(userAnswer: String): Boolean = ??? //Yet to be done using an API
-
+    private def verifyFr(userAnswer: String):Boolean = false
     def summarizeQuizResults(answers: List[Boolean]): String = ??? // Need to Discuss with team
 }

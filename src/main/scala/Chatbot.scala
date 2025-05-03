@@ -2,7 +2,6 @@ import DatasetLoader._
 import ResourceLoader._
 import scala.util.Random
 
-
 object Chatbot {
     private var state: String = ""
     private val quiz = Quiz

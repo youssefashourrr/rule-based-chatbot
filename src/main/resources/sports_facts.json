@@ -971,7 +971,7 @@
             "format",
             "played"
         ],
-        "intent": "how"
+        "intent": "what"
     },
     {
         "sport": "tennis",
@@ -994,7 +994,8 @@
             "wimbledon",
             "oldest",
             "first",
-            "1877"
+            "established",
+            "tournament"
         ],
         "intent": "when"
     },
@@ -1004,10 +1005,11 @@
         "keywords": [
             "rounds",
             "sets",
-            "best of 3",
-            "best of 5"
+            "best-of-3",
+            "best-of-5",
+            "match"
         ],
-        "intent": "how"
+        "intent": "how many"
     },
     {
         "sport": "tennis",
@@ -1016,7 +1018,6 @@
             "win condition",
             "set",
             "win",
-            "games",
             "margin"
         ],
         "intent": "how"
@@ -1054,7 +1055,8 @@
         "keywords": [
             "deuce",
             "advantage",
-            "win"
+            "win",
+            "consecutive"
         ],
         "intent": "how"
     },
@@ -1063,7 +1065,8 @@
         "content": "The server switches every game between players.",
         "keywords": [
             "server",
-            "switch"
+            "switch",
+            "rotate"
         ],
         "intent": "when"
     },
@@ -1073,6 +1076,7 @@
         "keywords": [
             "fault",
             "serve",
+            "invalid serve",
             "service box"
         ],
         "intent": "how"
@@ -1081,8 +1085,9 @@
         "sport": "tennis",
         "content": "A double fault results in the loss of a point.",
         "keywords": [
+            "two faults",
             "double fault",
-            "serve",
+            "twice",
             "point loss"
         ],
         "intent": "what"
@@ -1099,16 +1104,6 @@
     },
     {
         "sport": "tennis",
-        "content": "The ball must bounce once before hitting it in most cases, except for volleys.",
-        "keywords": [
-            "bounce",
-            "volley",
-            "rules"
-        ],
-        "intent": "how"
-    },
-    {
-        "sport": "tennis",
         "content": "The tennis court has different surfaces: grass, clay, and hard.",
         "keywords": [
             "material",
@@ -1116,7 +1111,8 @@
             "surface",
             "grass",
             "clay",
-            "hard"
+            "hard",
+            "made of"
         ],
         "intent": "what"
     },
@@ -1127,7 +1123,8 @@
             "nadal",
             "rafael nadal",
             "nickname",
-            "king of clay",
+            "king",
+            "clay",
             "dominance"
         ],
         "intent": "who"
@@ -1139,7 +1136,9 @@
             "federer",
             "roger federer",
             "grand slam",
-            "20 titles"
+            "titles",
+            "championships",
+            "victories"
         ],
         "intent": "how many"
     },
@@ -1150,7 +1149,10 @@
             "djokovic",
             "novak djokovic",
             "rank",
-            "record"
+            "ranking",
+            "record",
+            "most weeks",
+            "no. 1"
         ],
         "intent": "who"
     },
@@ -1162,20 +1164,10 @@
             "serena williams",
             "female",
             "greatest",
+            "twenty-three",
             "23 titles"
         ],
         "intent": "who"
-    },
-    {
-        "sport": "tennis",
-        "content": "Tennis was originally played with the palm of the hand, not rackets.",
-        "keywords": [
-            "origin",
-            "history",
-            "rackets",
-            "hand"
-        ],
-        "intent": "how"
     },
     {
         "sport": "tennis",
@@ -1183,7 +1175,8 @@
         "keywords": [
             "rally",
             "shots",
-            "exchange"
+            "exchange",
+            "back-and-forth"
         ],
         "intent": "what"
     },
@@ -1193,16 +1186,16 @@
         "keywords": [
             "ace",
             "serve",
-            "unreturned"
+            "unreturned",
+            "no return"
         ],
         "intent": "what"
     },
     {
         "sport": "tennis",
-        "content": "A break point occurs when the receiver has a chance to win the game on the opponent’s serve.",
+        "content": "A break point occurs when the receiver has a chance to win the game on the opponent's serve.",
         "keywords": [
             "break point",
-            "serve",
             "receiver"
         ],
         "intent": "what"
@@ -1214,7 +1207,8 @@
             "calendar",
             "grand slam",
             "four",
-            "4 tournaments"
+            "4 tournaments",
+            "achievement"
         ],
         "intent": "what"
     },
@@ -1238,7 +1232,8 @@
             "matches",
             "professional",
             "year",
-            "per year"
+            "per year",
+            "annually"
         ],
         "intent": "how many"
     },
@@ -1258,8 +1253,10 @@
         "content": "Tennis was reintroduced to the Olympics in 1988 after being dropped for decades.",
         "keywords": [
             "olympics",
-            "reintroduction",
-            "1988"
+            "olympic games",
+            "return",
+            "comeback",
+            "reintroduction"
         ],
         "intent": "when"
     },
@@ -1268,10 +1265,11 @@
         "content": "Tennis is believed to have originated in France during the 12th century.",
         "keywords": [
             "origin",
-            "france",
+            "originate",
+            "invent",
             "12th century"
         ],
-        "intent": "when"
+        "intent": "where"
     },
     {
         "sport": "tennis",
@@ -1279,10 +1277,11 @@
         "keywords": [
             "sides",
             "change sides",
+            "swap",
             "court",
             "odd game"
         ],
-        "intent": "how"
+        "intent": "when"
     },
     {
         "sport": "tennis",
@@ -1290,17 +1289,21 @@
         "keywords": [
             "umpire",
             "chair",
-            "decisions"
+            "decisions",
+            "role",
+            "high chair"
         ],
-        "intent": "who"
+        "intent": "what"
     },
     {
         "sport": "tennis",
         "content": "Line judges assist the umpire in calling balls in or out.",
         "keywords": [
+            "line",
             "line judge",
-            "calls",
-            "in or out"
+            "assist",
+            "help",
+            "officials"
         ],
         "intent": "who"
     },
@@ -1310,7 +1313,11 @@
         "keywords": [
             "racket",
             "material",
-            "graphite"
+            "graphite",
+            "construct",
+            "made of",
+            "light",
+            "durable"
         ],
         "intent": "what"
     },
@@ -1320,38 +1327,41 @@
         "keywords": [
             "net",
             "height",
-            "3 feet"
+            "high",
+            "tall"
         ],
-        "intent": "how many"
+        "intent": "how"
     },
     {
         "sport": "tennis",
         "content": "Topspin is used to help the ball dip into the court during aggressive shots.",
         "keywords": [
             "topspin",
+            "top spin",
             "shot",
             "technique"
         ],
-        "intent": "how"
+        "intent": "what"
     },
     {
         "sport": "tennis",
-        "content": "A lob is a shot that goes high over the opponent’s head.",
+        "content": "A lob is a shot that goes high over the opponent's head.",
         "keywords": [
             "lob",
-            "shot",
             "high ball"
         ],
         "intent": "what"
     },
     {
         "sport": "tennis",
-        "content": "The Davis Cup is an international team competition in men’s tennis.",
+        "content": "The Davis Cup is an international team competition in men's tennis.",
         "keywords": [
             "davis",
             "davis cup",
             "team",
-            "men"
+            "men",
+            "competition",
+            "doubles"
         ],
         "intent": "what"
     },
@@ -1362,7 +1372,8 @@
             "fed cup",
             "billie jean",
             "women",
-            "team"
+            "team",
+            "doubles"
         ],
         "intent": "what"
     }

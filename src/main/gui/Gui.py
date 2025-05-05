@@ -96,7 +96,7 @@ for i, msg in enumerate(st.session_state.messages):
                         )
                         if st.button("Submit Answer", key=f"submit_text_{i}"):
                             if user_answer.strip():
-                                is_correct = bot.getQuiz().evaluateQuizAnswer(user_answer.strip())
+                                is_correct = bot.getQuiz().evaluateQuizAnswer(bot.parseInput(user_answer.strip()))
                                 feedback = "✅ Correct!" if is_correct else "❌ Incorrect!"
                                 st.session_state.messages.append({"role": "assistant", "content": feedback})
                                 del st.session_state.current_quiz

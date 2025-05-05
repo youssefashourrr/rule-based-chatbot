@@ -12,12 +12,12 @@
     {
         "sport": "soccer",
         "content": "What is the term for when a player scores three goals in a single match?",
-        "keywords": ["hat trick", "hat-trick"]
+        "keywords": ["hat trick", "hat-trick","hattrick"]
     },
     {
         "sport": "soccer",
         "content": "Which position is responsible for guarding the goal?",
-        "keywords": ["goalkeeper", "keeper", "goalie"]
+        "keywords": ["goalkeeper", "keeper", "goalie", "gk"]
     },
     {
         "sport": "soccer",

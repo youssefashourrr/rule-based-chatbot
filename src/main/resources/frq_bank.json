@@ -1,7 +1,229 @@
 [
     {
-        "sport": "",
-        "content": "",
-        "keywords": []
+        "sport": "soccer",
+        "content": "Name a country that has won the FIFA World Cup more than once.",
+        "keywords": ["brazil", "germany", "italy", "argentina", "france", "uruguay"]
+    },
+    {
+        "sport": "soccer",
+        "content": "Who is widely regarded as one of the greatest soccer players of all time from Argentina?",
+        "keywords": ["messi", "lionel messi", "maradona", "diego maradona"]
+    },
+    {
+        "sport": "soccer",
+        "content": "What is the term for when a player scores three goals in a single match?",
+        "keywords": ["hat trick", "hat-trick"]
+    },
+    {
+        "sport": "soccer",
+        "content": "Which position is responsible for guarding the goal?",
+        "keywords": ["goalkeeper", "keeper", "goalie"]
+    },
+    {
+        "sport": "soccer",
+        "content": "Name the international tournament played every four years involving national teams from around the world.",
+        "keywords": ["world cup", "fifa world cup"]
+    },
+    {
+        "sport": "soccer",
+        "content": "Which English club is based in Old Trafford?",
+        "keywords": ["manchester united"]
+    },
+    {
+        "sport": "soccer",
+        "content": "Which country hosted the 2022 FIFA World Cup?",
+        "keywords": ["qatar"]
+    },
+    {
+        "sport": "soccer",
+        "content": "What is the name of the rule that prevents attackers from being behind the last defender when the ball is played?",
+        "keywords": ["offside", "off side"]
+    },
+    {
+        "sport": "soccer",
+        "content": "What is awarded when a player is fouled inside the penalty box?",
+        "keywords": ["penalty", "penalty kick"]
+    },
+    {
+        "sport": "soccer",
+        "content": "What's the term for a pass that directly results in a goal?",
+        "keywords": ["assist"]
+    },
+    {
+        "sport": "soccer",
+        "content": "Which two colors are used for cards shown by referees?",
+        "keywords": ["yellow", "red"]
+    },
+    {
+        "sport": "soccer",
+        "content": "Who is the top scorer in international football history (as of 2024)?",
+        "keywords": ["cristiano ronaldo", "ronaldo"]
+    },
+    {
+        "sport": "soccer",
+        "content": "What is the common term for a match that ends without any goals?",
+        "keywords": ["goalless draw", "0-0", "nil-nil", "scoreless"]
+    },
+    {
+        "sport": "soccer",
+        "content": "Which country has won the most World Cups?",
+        "keywords": ["brazil"]
+    },
+    {
+        "sport": "soccer",
+        "content": "What type of kick is used to restart play after the ball crosses the sideline?",
+        "keywords": ["throw-in", "throw in"]
+    },
+
+    {
+        "sport": "basketball",
+        "content": "Who is considered the greatest basketball player of all time and played for the Chicago Bulls?",
+        "keywords": ["michael jordan", "jordan"]
+    },
+    {
+        "sport": "basketball",
+        "content": "What is it called when a player jumps and forcefully scores the ball through the hoop?",
+        "keywords": ["dunk", "slam dunk"]
+    },
+    {
+        "sport": "basketball",
+        "content": "Name the line on the court that separates 2-point shots from 3-point shots.",
+        "keywords": ["three-point line", "3-point line", "three point line"]
+    },
+    {
+        "sport": "basketball",
+        "content": "What team does Stephen Curry play for (as of 2024)?",
+        "keywords": ["golden state warriors", "warriors"]
+    },
+    {
+        "sport": "basketball",
+        "content": "Name the move where a player takes too many steps without dribbling.",
+        "keywords": ["travel", "traveling"]
+    },
+    {
+        "sport": "basketball",
+        "content": "What's the term for when a player misses a shot and grabs the ball again?",
+        "keywords": ["rebound", "offensive rebound"]
+    },
+    {
+        "sport": "basketball",
+        "content": "Which player is known for the skyhook shot?",
+        "keywords": ["kareem abdul-jabbar", "kareem"]
+    },
+    {
+        "sport": "basketball",
+        "content": "Which city is home to the NBA team 'Knicks'?",
+        "keywords": ["new york"]
+    },
+    {
+        "sport": "basketball",
+        "content": "What is the name of the area under the basket marked by a rectangle?",
+        "keywords": ["paint", "key", "lane"]
+    },
+    {
+        "sport": "basketball",
+        "content": "Which country won the gold medal in men's basketball at the 2020 Olympics?",
+        "keywords": ["usa", "united states"]
+    },
+    {
+        "sport": "basketball",
+        "content": "What is it called when a defender legally stops a shot from going into the basket?",
+        "keywords": ["block", "blocked shot"]
+    },
+    {
+        "sport": "basketball",
+        "content": "What is the term for a violation involving personal contact without trying to play the ball?",
+        "keywords": ["flagrant foul"]
+    },
+    {
+        "sport": "basketball",
+        "content": "Who is the all-time leader in assists in NBA history?",
+        "keywords": ["john stockton"]
+    },
+    {
+        "sport": "basketball",
+        "content": "What kind of play is called when both teams have possession of the ball at once?",
+        "keywords": ["jump ball", "held ball"]
+    },
+    {
+        "sport": "basketball",
+        "content": "How many points is a free throw worth?",
+        "keywords": ["1", "one"]
+    },
+
+    {
+        "sport": "tennis",
+        "content": "What is the term for a score of zero in tennis?",
+        "keywords": ["love"]
+    },
+    {
+        "sport": "tennis",
+        "content": "Who is the Serbian tennis player with the most Grand Slam titles?",
+        "keywords": ["novak djokovic", "djokovic"]
+    },
+    {
+        "sport": "tennis",
+        "content": "Name one of the four Grand Slam tournaments.",
+        "keywords": ["wimbledon", "us open", "australian open", "french open", "roland garros"]
+    },
+    {
+        "sport": "tennis",
+        "content": "What is the shot called when the ball is hit before it bounces?",
+        "keywords": ["volley"]
+    },
+    {
+        "sport": "tennis",
+        "content": "What term is used when a player wins a game while the opponent is serving?",
+        "keywords": ["break", "break point"]
+    },
+    {
+        "sport": "tennis",
+        "content": "What's the term for a serve that isn't returned by the opponent?",
+        "keywords": ["ace"]
+    },
+    {
+        "sport": "tennis",
+        "content": "What type of surface is the Australian Open played on?",
+        "keywords": ["hard court", "hardcourt"]
+    },
+    {
+        "sport": "tennis",
+        "content": "Which female player has won the most Wimbledon singles titles?",
+        "keywords": ["martina navratilova", "navratilova"]
+    },
+    {
+        "sport": "tennis",
+        "content": "What do you call the final point needed to win a match?",
+        "keywords": ["match point"]
+    },
+    {
+        "sport": "tennis",
+        "content": "In what country is Roland Garros held?",
+        "keywords": ["france"]
+    },
+    {
+        "sport": "tennis",
+        "content": "What is the name of the stroke where the player hits the ball with the back of the hand facing the net?",
+        "keywords": ["backhand"]
+    },
+    {
+        "sport": "tennis",
+        "content": "Who was the first man to win all four Grand Slam titles in a single year?",
+        "keywords": ["don budge"]
+    },
+    {
+        "sport": "tennis",
+        "content": "What do you call a game in which no points are lost by the server?",
+        "keywords": ["love game"]
+    },
+    {
+        "sport": "tennis",
+        "content": "Which tournament is played on grass courts?",
+        "keywords": ["wimbledon"]
+    },
+    {
+        "sport": "tennis",
+        "content": "Which term refers to a 6-6 tie in a set?",
+        "keywords": ["tiebreak", "tie-break"]
     }
 ]

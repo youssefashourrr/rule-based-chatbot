@@ -1,8 +1,184 @@
 [
     {
-        "sport": "",
-        "content": "",
-        "options": [],
-        "answer": ""
+        "sport": "soccer",
+        "content": "Which country won the FIFA World Cup in 2018?",
+        "options": ["France", "Croatia", "Brazil", "Germany"],
+        "answer": "France"
+    },
+    {
+        "sport": "soccer",
+        "content": "Which player has scored the most goals in World Cup history?",
+        "options": ["Ronaldo (Brazil)", "Miroslav Klose", "Pele", "Lionel Messi"],
+        "answer": "Miroslav Klose"
+    },
+    {
+        "sport": "soccer",
+        "content": "How many players are there on a soccer team on the field?",
+        "options": ["9", "10", "11", "12"],
+        "answer": "11"
+    },
+    {
+        "sport": "soccer",
+        "content": "What is the maximum duration of a professional soccer match (excluding extra time)?",
+        "options": ["80 minutes", "90 minutes", "100 minutes", "120 minutes"],
+        "answer": "90 minutes"
+    },
+    {
+        "sport": "soccer",
+        "content": "Which club has won the most UEFA Champions League titles?",
+        "options": ["Barcelona", "Liverpool", "Bayern Munich", "Real Madrid"],
+        "answer": "Real Madrid"
+    },
+    {
+        "sport": "soccer",
+        "content": "What is the color of a card shown for a serious foul?",
+        "options": ["Green", "Yellow", "Blue", "Red"],
+        "answer": "Red"
+    },
+    {
+        "sport": "soccer",
+        "content": "Who is known as 'The King of Football'?",
+        "options": ["Cristiano Ronaldo", "Zinedine Zidane", "Pele", "Ronaldinho"],
+        "answer": "Pele"
+    },
+    {
+        "sport": "soccer",
+        "content": "Which English club is nicknamed 'The Red Devils'?",
+        "options": ["Chelsea", "Arsenal", "Liverpool", "Manchester United"],
+        "answer": "Manchester United"
+    },
+    {
+        "sport": "soccer",
+        "content": "What part of the body can't touch the ball (except the goalkeeper)?",
+        "options": ["Feet", "Head", "Hands", "Chest"],
+        "answer": "Hands"
+    },
+    {
+        "sport": "soccer",
+        "content": "Where was the first World Cup held?",
+        "options": ["Italy", "Uruguay", "Brazil", "Argentina"],
+        "answer": "Uruguay"
+    },
+
+    {
+        "sport": "basketball",
+        "content": "How many players from each team are on the court at the same time?",
+        "options": ["4", "5", "6", "7"],
+        "answer": "5"
+    },
+    {
+        "sport": "basketball",
+        "content": "Which player is known as 'King James'?",
+        "options": ["Michael Jordan", "LeBron James", "Kobe Bryant", "Stephen Curry"],
+        "answer": "LeBron James"
+    },
+    {
+        "sport": "basketball",
+        "content": "What is the diameter of a basketball hoop?",
+        "options": ["16 inches", "18 inches", "20 inches", "22 inches"],
+        "answer": "18 inches"
+    },
+    {
+        "sport": "basketball",
+        "content": "Which NBA team has won the most championships?",
+        "options": ["Chicago Bulls", "Golden State Warriors", "Boston Celtics", "Los Angeles Lakers"],
+        "answer": "Boston Celtics"
+    },
+    {
+        "sport": "basketball",
+        "content": "What does NBA stand for?",
+        "options": ["National Basketball Association", "National Basket Association", "New Basketball Alliance", "North Basketball Association"],
+        "answer": "National Basketball Association"
+    },
+    {
+        "sport": "basketball",
+        "content": "How many points is a shot made from behind the arc worth?",
+        "options": ["1", "2", "3", "4"],
+        "answer": "3"
+    },
+    {
+        "sport": "basketball",
+        "content": "Which position is typically the tallest player?",
+        "options": ["Point Guard", "Shooting Guard", "Small Forward", "Center"],
+        "answer": "Center"
+    },
+    {
+        "sport": "basketball",
+        "content": "What is it called when a player bounces the ball while moving?",
+        "options": ["Passing", "Dribbling", "Traveling", "Screening"],
+        "answer": "Dribbling"
+    },
+    {
+        "sport": "basketball",
+        "content": "Who is the NBA's all-time leading scorer (as of 2024)?",
+        "options": ["LeBron James", "Kareem Abdul-Jabbar", "Michael Jordan", "Karl Malone"],
+        "answer": "LeBron James"
+    },
+    {
+        "sport": "basketball",
+        "content": "What is the shot clock duration in the NBA?",
+        "options": ["24 seconds", "30 seconds", "35 seconds", "20 seconds"],
+        "answer": "24 seconds"
+    },
+
+    {
+        "sport": "tennis",
+        "content": "How many Grand Slam tournaments are there in a year?",
+        "options": ["2", "3", "4", "5"],
+        "answer": "4"
+    },
+    {
+        "sport": "tennis",
+        "content": "What is the term for a score of 40-40?",
+        "options": ["Love", "Deuce", "Advantage", "Break"],
+        "answer": "Deuce"
+    },
+    {
+        "sport": "tennis",
+        "content": "Which surface is the French Open played on?",
+        "options": ["Grass", "Clay", "Hardcourt", "Carpet"],
+        "answer": "Clay"
+    },
+    {
+        "sport": "tennis",
+        "content": "Which player has won the most men's Grand Slam titles (as of 2024)?",
+        "options": ["Roger Federer", "Rafael Nadal", "Novak Djokovic", "Pete Sampras"],
+        "answer": "Novak Djokovic"
+    },
+    {
+        "sport": "tennis",
+        "content": "What does 'ACE' mean in tennis?",
+        "options": ["A foul serve", "A serve that the opponent cannot touch", "A double fault", "A backhand winner"],
+        "answer": "A serve that the opponent cannot touch"
+    },
+    {
+        "sport": "tennis",
+        "content": "How many sets are in a standard men's Grand Slam match?",
+        "options": ["3", "4", "5", "6"],
+        "answer": "5"
+    },
+    {
+        "sport": "tennis",
+        "content": "Which female player has the most Grand Slam singles titles?",
+        "options": ["Steffi Graf", "Serena Williams", "Margaret Court", "Venus Williams"],
+        "answer": "Margaret Court"
+    },
+    {
+        "sport": "tennis",
+        "content": "What is the line at the back of the court called?",
+        "options": ["Baseline", "Service line", "Backline", "End line"],
+        "answer": "Baseline"
+    },
+    {
+        "sport": "tennis",
+        "content": "Which tournament is played on grass?",
+        "options": ["Australian Open", "French Open", "US Open", "Wimbledon"],
+        "answer": "Wimbledon"
+    },
+    {
+        "sport": "tennis",
+        "content": "What is a 'break point'?",
+        "options": ["A serve fault", "A chance to win a game on the opponent's serve", "A tie in sets", "A tie in points"],
+        "answer": "A chance to win a game on the opponent's serve"
     }
 ]

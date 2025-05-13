@@ -1,5 +1,6 @@
 import DatasetLoader._
 import ResourceLoader._
+import Summarizer._
 import scala.util.Random
 
 
@@ -15,8 +16,21 @@ object Chatbot {
     }
 
 
-    def nextState(tokens: String): Unit = {
-
+    def nextState(tokens: List[String]): String = {
+        val factKeywords = Set("sport", "sports", "basketball", "football", "tennis", "fact", "facts", "know", "learn", "information", "knowledge", "game", "match", "team", "teams", "player", "players")
+        val chatKeywords = Set("hi", "hello", "weather", "joke", "day", "life", "chat", "small talk", "casual", "normal", "normally")
+    
+        val wantsFacts = tokens.exists(token => factKeywords.contains(token))
+        val wantsChat = tokens.exists(token => chatKeywords.contains(token))
+    
+        if (wantsFacts && !wantsChat) 
+            setState("facts")
+            "Sure! I was made for talking about sports anyway"
+        else if (wantsChat && !wantsFacts) 
+            setState("chat")
+            "Okay! Let's get to know each other more."
+        else 
+            "I didn't quite get what you want. Please try again."
     }
 
 
@@ -46,8 +60,9 @@ object Chatbot {
             .toList
 
         val bigrams = tokens.sliding(2).map(_.mkString(" ")).toList
+        val trigrams = tokens.sliding(3).map(_.mkString(" ")).toList
 
-        tokens ++ bigrams
+        tokens ++ bigrams ++ trigrams
     }
 
 
@@ -88,12 +103,6 @@ object Chatbot {
         intent: Option[String],
         keywords: List[String]
     )
-    
-
-    def toConvoQuery(tokens: List[String]): UserQuery = ???
-        // create UserQuery instance
-        // sport always set to None
-        // similar logic to toFactQuery()
 
 
     def toFactQuery(tokens: List[String]): UserQuery = {
@@ -130,19 +139,27 @@ object Chatbot {
     }
 
 
-    def generateResponse(query: UserQuery): String = {
+    def chatReply(tokens: List[String]): Option[String] = {
+        conversationMap.collectFirst {
+          case (triggers, replies) if triggers.exists(tokens.contains) =>
+            Random.shuffle(replies).head
+        }
+    }
+
+
+    def generateFact(query: UserQuery): String = {
         (query.sport, query.intent) match {
             case (Some("no sport"), _) =>
-               str =  "Hmm, I couldn't tell which sport you're asking about. Could you specify it more clearly?"
+                "Hmm, I couldn't tell which sport you're asking about. Could you specify it more clearly?"
 
             case (Some("multiple sports"), _) =>
-               str =  "I noticed you mentioned more than one sport. Could you ask about one sport at a time?"
+                "I noticed you mentioned more than one sport. Could you ask about one sport at a time?"
 
             case (_, Some("no intent")) =>
-               str=   "I'm not sure what you're trying to ask. Could you rephrase your question?"
+                "I'm not sure what you're trying to ask. Could you rephrase your question?"
 
             case (_, Some("multiple intents")) =>
-              str=   "Looks like your question contains multiple requests. Could you focus on one thing?"
+                "Looks like your question contains multiple requests. Could you focus on one thing?"
 
             case (Some(sport), Some(intent)) =>
                 val matches = sportFacts.filter { fact =>
@@ -151,93 +168,33 @@ object Chatbot {
                     query.keywords.exists(kw => fact.keywords.contains(kw))
                 }
 
-                if (matches.nonEmpty) str = matches.head.content
-                else str=  "Your question is a bit too vague — I couldn't match it to any specific fact. Could you include more detail?"
-        
+                if (matches.nonEmpty) matches.head.content
+                else "Your question is a bit too vague — I couldn't match it to any specific fact. Could you include more detail?"
+
             case _ =>
-                str = "Something went wrong while understanding your question. Please try again."
+                "Something went wrong while understanding your question. Please try again."
         }
-        logInteraction(input,str);
-        str
-    }
-    def logInteraction(userInput: String, chatbotResponse: String): Unit = {
-        val interaction = Map("userInput" -> userInput, "chatbotResponse" -> chatbotResponse)
-        val json = write(interaction) // Serialize map to JSON
-        val file = new java.io.File("D:\\Hamdy\\ChatBot\\src\\main\\resources\\chat_log.json")
-        val writer = new BufferedWriter(new FileWriter(file, true)) // append mode
-        try
-            writer.write(json)
-            writer.newLine() // for readability
-        finally
-            writer.close()
-    }
-
-    def getInteractionLog(): List[(Int, String, String)] = {
-        val file = new java.io.File("D:\\Hamdy\\ChatBot\\src\\main\\resources\\chat_log.json")
-        if (!file.exists()) return List.empty
-
-        val lines = Source.fromFile(file).getLines().toList
-        lines.zipWithIndex.map { case (line, idx) =>
-            val data = read[Map[String, String]](line)
-            val userInput = data.getOrElse("userInput", "")
-            val chatbotResponse = data.getOrElse("chatbotResponse", "")
-            (idx + 1, userInput, chatbotResponse)
-        }
-    }
-
-    def analyzeInteractions(log: List[(Int, String, String)]): String = {
-        if (log.isEmpty) return "No interactions to analyze."
-        val fallbackResponses = Map(
-            "Hmm, I couldn't tell which sport you're asking about. Could you specify it more clearly?" ->
-              "User did not mention the sport",
-            "I noticed you mentioned more than one sport. Could you ask about one sport at a time?" ->
-              "User mentioned multiple sports",
-            "I'm not sure what you're trying to ask. Could you rephrase your question?" ->
-              "Chatbot did not understand the question",
-            "Looks like your question contains multiple requests. Could you focus on one thing?" ->
-              "User asked multiple things",
-            "Your question is a bit too vague — I couldn't match it to any specific fact. Could you include more detail?" ->
-              "Question was vague",
-            "Something went wrong while understanding your question. Please try again." ->
-              "Unexpected error"
-        )
-
-        val summaryCounts = log
-          .map { case (_, _, response) =>
-              fallbackResponses.getOrElse(response, "Successfully answered the user's question")
-          }
-          .groupBy(identity)
-          .mapValues(_.size)
-          .toList
-          .sortBy(-_._2)
-
-        val total = log.size
-        val reportBuilder = new StringBuilder
-        reportBuilder.append(s"Total interactions: $total\n\n")
-        reportBuilder.append("Chatbot response distribution:\n")
-
-        for ((summary, count) <- summaryCounts) {
-            val percentage = (count.toDouble / total) * 100
-            reportBuilder.append(f" - $percentage%.0f%% $summary\n")
-        }
-
-        reportBuilder.toString()
     }
 
 
     def interact(input: String): String = {
-        tokens = parse(input)
+        val tokens = parse(input)
+        var response = ""
 
         getState match {
-            case "default" => // call nextState() to switch small talk or facts mode
+            case "default" => response = nextState(tokens)
             case "greeting" =>
                 val username = extractName(tokens)
-                // no name -> stay in greeting state and prompt user to try again
-                // name detected -> ask user about next state then switch to default
-            case "small talk" => 
-                // call toConvoQuery() for suitable UserQuery instance
-                // call converse() to generate output
-            case "facts" => generateFact(toFactQuery(tokens))
+                if (username == None) response = "I was not able to catch that. Please write your name clearly"
+                else {
+                    setState("default")
+                    response = s"Nice to meet you $username, do you have any questions about sports or do you just want to chat with me?"
+                }
+            case "chat" => response = chatReply(tokens).getOrElse("I'm not sure I understand what you mean. Maybe try asking in a different way")
+            case "facts" => response = generateFact(toFactQuery(tokens))
         }
+
+        logInteraction(input, response)
+        response
     } 
 }

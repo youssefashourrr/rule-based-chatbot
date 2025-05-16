@@ -1,7 +1,67 @@
 [
   {
-    "name": "",
-    "id": "",
-    "messages": []
+    "Name": "Hamdy",
+    "userInput": "hi",
+    "chatbotResponse": "What's up? 😊"
+  },
+  {
+    "Name": "Hamdy",
+    "userInput": "i love you",
+    "chatbotResponse": "Aww, I love chatting with you too!"
+  },
+  {
+    "Name": "Hamdy",
+    "userInput": "hamdy",
+    "chatbotResponse": "Nice to meet you Hamdy, do you have any questions about sports or do you just want to chat?"
+  },
+  {
+    "Name": "Hamdy",
+    "userInput": "sports",
+    "chatbotResponse": "Sure! I was made for talking about sports anyway"
+  },
+  {
+    "Name": "Hamdy",
+    "userInput": "whats world cup in soccer",
+    "chatbotResponse": "I'm not sure what you're trying to ask. Could you rephrase your question?"
+  },
+  {
+    "Name": "Hamdy",
+    "userInput": "what is the tournament held every 4 years in soccer",
+    "chatbotResponse": "The FIFA World Cup is the most prestigious soccer tournament, held every 4 years."
+  },
+  {
+    "Name": "Hamdy",
+    "userInput": "where was the first world cup held in soccer",
+    "chatbotResponse": "The first FIFA World Cup was held in Uruguay in 1930."
+  },
+  {
+    "Name": "Hamdy",
+    "userInput": "what warning soccer",
+    "chatbotResponse": "Yellow cards are used to caution players for misconduct."
+  },
+  {
+    "Name": "Hamdy",
+    "userInput": "when is extratime soccer",
+    "chatbotResponse": "Your question is a bit too vague — I couldn't match it to any specific fact. Could you include more detail?"
+  },
+  {
+    "Name": "Hamdy",
+    "userInput": "when extra time soccer",
+    "chatbotResponse": "Extra time is used when a knockout match ends in a draw."
+  },
+  {
+    "Name": "Hamdy",
+    "userInput": "hamdy",
+    "chatbotResponse": "Nice to meet you Hamdy, do you have any questions about sports or do you just want to chat?"
+  },
+  {
+    "Name": "Hamdy",
+    "userInput": "chat",
+    "chatbotResponse": "Okay! Let's get to know each other more."
+  },
+  {
+    "Name": "Hamdy",
+    "userInput": "i love you ",
+    "chatbotResponse": "You're making this bot smile 😊"
   }
 ]

@@ -68,9 +68,10 @@ object Chatbot {
     }
 
 
+
     def extractName(tokens: List[String]): Option[String] = {
         if (tokens.length == 1) return Some(tokens.head)
-        
+    
         val nameIntroPatterns = List(
             List("my", "name", "is"),
             List("i", "am"),
@@ -84,17 +85,22 @@ object Chatbot {
             List("known", "as"),
             List("name", "is")
         )
-
+    
         nameIntroPatterns
           .sortBy(-_.length)
           .collectFirst {
-            case pattern if tokens.sliding(pattern.length).indexWhere(_.sameElements(pattern)) != -1 =>
-              val idx = tokens.sliding(pattern.length).indexWhere(_.sameElements(pattern)) + pattern.length
-              if (idx < tokens.length) Some(tokens(idx)) else None
+            case pattern =>
+              val idxOpt = tokens.sliding(pattern.length).zipWithIndex.find {
+                case (window, _) => window.map(_.toLowerCase) == pattern
+              }.map(_._2 + pattern.length)
+    
+              idxOpt.flatMap { idx =>
+                if (idx < tokens.length) Some(tokens(idx)) else None
+              }
           }
           .flatten
     }
-
+    
 
     case class UserQuery(
         sport: Option[String],

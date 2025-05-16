@@ -3,6 +3,7 @@ import random
 from py4j.java_gateway import JavaGateway, GatewayParameters
 import matplotlib.pyplot as plt
 import pandas as pd
+import json
 
 
 # Page setup
@@ -67,7 +68,7 @@ st.markdown("""
 # Session state initialization
 if "messages" not in st.session_state:
     try:
-        st.session_state.messages = [{"role": "assistant", "content": bot.greetUser()}]
+        st.session_state.messages = [{"role": "assistant", "content": bot.greet()}]
     except Exception as e:
         st.session_state.messages = [{"role": "assistant", "content": f"Error greeting user via Scala backend: {e}"}]
 
@@ -96,6 +97,11 @@ with st.sidebar:
                 type="primary" if st.session_state.current_view == "analysis" else "secondary"):
         st.session_state.current_view = "analysis"
         st.rerun()
+    if st.button("📜 Chat History", key="nav_history_btn", use_container_width=True,
+                type="primary" if st.session_state.current_view == "history" else "secondary"):
+        st.session_state.current_view = "history"
+        st.rerun()
+    
     st.markdown("---")
     with st.expander("ℹ️ About"):
         st.write("**Hamoodyyyy**")
@@ -121,7 +127,7 @@ if st.session_state.current_view == "chat":
         last_user_prompt = st.session_state.messages[-1]["content"]
         try:
             # Scala backend handles input processing
-            response = bot.generateResponse(last_user_prompt)
+            response = bot.interact(last_user_prompt)
             st.session_state.messages.append({"role": "assistant", "content": response})
         except Exception as e:
             st.session_state.messages.append({"role": "assistant", "content": f"Error communicating with bot: {e}"})
@@ -324,28 +330,15 @@ elif st.session_state.current_view == "analysis":
                 # Pie chart - correct vs incorrect
                 if correct + incorrect > 0:
                     col1, col2 = st.columns([1, 2])
-                    with col1:
-                        st.subheader("Correct vs Incorrect")
-                        fig1, ax1 = plt.subplots(figsize=(2, 2))
-                        ax1.pie(
-                            [correct, incorrect],
-                            labels=['Correct', 'Incorrect'],
-                            autopct='%1.1f%%',
-                            startangle=90,
-                            colors=['#4CAF50', '#F44336'],
-                            textprops=dict(color="white", fontsize=8)
-                        )
-                        ax1.axis('equal')
-                        st.pyplot(fig1, use_container_width=True)
 
-                    # Pie chart - top 3 categories
+                    # Show Top 3 Categories FIRST
                     if category_data:
-                        with col2:
+                        with col1:
                             st.subheader("Top 3 Asked Categories")
                             labels = [cat for cat, _ in category_data]
                             values = [pct for _, pct in category_data]
 
-                            fig2, ax2 = plt.subplots(figsize=(3, 3))
+                            fig2, ax2 = plt.subplots(figsize=(2, 2))  # Match size to the second pie chart
                             ax2.pie(
                                 values,
                                 labels=labels,
@@ -355,7 +348,22 @@ elif st.session_state.current_view == "analysis":
                                 textprops=dict(color="black", fontsize=8)
                             )
                             ax2.axis('equal')
-                            st.pyplot(fig2, use_container_width=True)
+                            st.pyplot(fig2, use_container_width=False)
+
+                    # Then show Correct vs Incorrect
+                    with col2:
+                        st.subheader("Correct vs Incorrect")
+                        fig1, ax1 = plt.subplots(figsize=(1.5, 1.5))
+                        ax1.pie(
+                            [correct, incorrect],
+                            labels=['Correct', 'Incorrect'],
+                            autopct='%1.1f%%',
+                            startangle=90,
+                            colors=['#4CAF50', '#F44336'],
+                            textprops=dict(color="white", fontsize=6)
+                        )
+                        ax1.axis('equal')
+                        st.pyplot(fig1, use_container_width=False)
 
             else:
                 st.warning("Unknown summary format returned from backend.")
@@ -364,3 +372,32 @@ elif st.session_state.current_view == "analysis":
 
     except Exception as e:
         st.error(f"Error processing quiz performance: {e}")
+
+elif st.session_state.current_view == "history":
+    st.title("📜 Previous Chat History")
+    st.caption("See what other users asked and how the bot responded.")
+
+    try:
+        # Replace 'chat_history.json' with your actual file path
+        with open("D:\\Hamdy\\ChatBot\\src\\main\\resources\\chat_log.json", "r") as file:
+            chat_data = json.load(file)
+
+        if chat_data:
+            grouped_by_user = {}
+            for entry in chat_data:
+                name = entry.get("Name", "Unknown")
+                if name not in grouped_by_user:
+                    grouped_by_user[name] = []
+                grouped_by_user[name].append(entry)
+
+            for name, chats in grouped_by_user.items():
+                with st.expander(f"👤 {name}"):
+                    for i, chat in enumerate(chats):
+                        st.markdown(f"**Q{i+1}:** {chat.get('userInput', '')}")
+                        st.markdown(f"**🤖 A{i+1}:** {chat.get('chatbotResponse', '')}")
+                        st.markdown("---")
+        else:
+            st.info("No chat history available.")
+    except Exception as e:
+        st.error(f"Error loading chat history: {e}")
+

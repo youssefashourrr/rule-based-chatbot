@@ -10,22 +10,35 @@ import com.github.tototoshi.csv._
 
 
 object Summarizer {
-	def logInteraction(userInput: String, chatbotResponse: String , name:String): Unit = {
-		val interaction = Map("Name" -> name ,"userInput" -> userInput, "chatbotResponse" -> chatbotResponse)
-		val json = write(interaction)
-		val file = new java.io.File("C:\\University\\Year two- semster two\\Advanced prog\\rule-based-chatbot\\src\\main\\resources\\chat_log.json")
-		val writer = new BufferedWriter(new FileWriter(file, true)) // append mode
+	def logInteraction(userInput: String, chatbotResponse: String, name: String): Unit = {
+		val file = new File("D:\\Hamdy\\ChatBot\\src\\main\\resources\\chat_log.json")
+
+		// Step 1: Read existing JSON array or start fresh
+		val existingLogs: List[Map[String, String]] =
+			if (file.exists() && file.length() > 0)
+			read[List[Map[String, String]]](Source.fromFile(file).mkString)
+			else
+			List()
+
+		// Step 2: Create new log entry
+		val newLog = Map(
+			"Name" -> name,
+			"userInput" -> userInput,
+			"chatbotResponse" -> chatbotResponse
+		)
+
+		// Step 3: Append and write back as proper JSON array
+		val updatedLogs = existingLogs :+ newLog
+		val writer = new BufferedWriter(new FileWriter(file, false)) // overwrite mode
 		try {
-			writer.write(json)
-			writer.newLine()
+			writer.write(write(updatedLogs, indent = 2)) // pretty-print JSON
+		} finally writer.close()
 		}
-		finally writer.close()
-	}
 
 
 	def getInteractionLog(): List[(Int, String, String,String)] = {
 		val file = new java.io.File(
-		"C:\\University\\Year two- semster two\\Advanced prog\\rule-based-chatbot\\src\\main\\resources\\chat_log.json")
+		"D:\\Hamdy\\ChatBot\\src\\main\\resources\\chat_log.json")
 		if (!file.exists()) return List.empty
 		val lines = Source.fromFile(file).getLines().toList
 		lines.zipWithIndex.map { case (line, idx) =>
@@ -85,7 +98,7 @@ object Summarizer {
 		if (qOpt.isEmpty) return
 		val q = qOpt.get
 		val file = new File(
-			"C:\\University\\Year two- semster two\\Advanced prog\\rule-based-chatbot\\src\\main\\resources\\quizResults.csv")
+			"D:\\Hamdy\\ChatBot\\src\\main\\resources\\quizResults.csv")
 		val headers = List("Question", "Category", "Total Asked", "Correct Results")
 
 		if (!file.exists()) {
@@ -132,7 +145,7 @@ object Summarizer {
 	def analyzeQuizPerformance(): String = {
 		val reader = CSVReader.open(
 			new java.io.File(
-				"C:\\University\\Year two- semster two\\Advanced prog\\rule-based-chatbot\\src\\main\\resources\\quizResults.csv"
+				"D:\\Hamdy\\ChatBot\\src\\main\\resources\\quizResults.csv"
 			)
 		)
 		val records = reader.all()

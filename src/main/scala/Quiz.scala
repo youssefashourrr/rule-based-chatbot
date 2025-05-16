@@ -56,7 +56,7 @@ object Quiz
     private def summarizeQuizResults(qOpt: Option[Question], res: Boolean): Unit =
         if (qOpt.isEmpty) return
         val q = qOpt.get
-        val file = new File("D:\\Hamdy\\ChatBot\\src\\main\\resources\\quizResults.csv")
+        val file = new File("D:\\Hamdy\\ChatBot\\src\\main\\resources\\quiz_results.csv")
         val headers = List("Question", "Category", "Total Asked", "Correct Results")
 
         // Ensure file exists with headers
@@ -102,7 +102,7 @@ object Quiz
         writer.close()
 
     def analyzeSuccessRate(): Int = {
-            val file = new File("D:\\Hamdy\\ChatBot\\src\\main\\resources\\quizResults.csv")
+            val file = new File("D:\\Hamdy\\ChatBot\\src\\main\\resources\\quiz_results.csv")
             if (!file.exists()) {
               println("No quiz data found.")
               return 0
@@ -126,7 +126,7 @@ object Quiz
             else (totalCorrect.toDouble / totalAsked * 100).round.toInt
           }
       def top3CategoryPercentages(): List[(String, Double)] = {
-            val file = new File("D:\\Hamdy\\ChatBot\\src\\main\\resources\\quizResults.csv")
+            val file = new File("D:\\Hamdy\\ChatBot\\src\\main\\resources\\quiz_results.csv")
             if (!file.exists()) {
               println("No quiz data found.")
               return List()
@@ -164,7 +164,4 @@ object Quiz
             import scala.jdk.CollectionConverters._
             combined.map { case (s, d) => (s, d: java.lang.Double) }.asJava
           }
-        
-           
-
 }

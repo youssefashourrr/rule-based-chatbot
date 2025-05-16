@@ -26,12 +26,12 @@ object Chatbot {
     
         if (wantsFacts && !wantsChat) 
             setState("facts")
-            "Sure! I was made for talking about sports anyway"
+            "Great! Let's dive into some cool sports facts. Ask away!"
         else if (wantsChat && !wantsFacts) 
             setState("chat")
-            "Okay! Let's get to know each other more."
+            "Sure thing! I'm always up for a nice conversation. What's on your mind?"
         else 
-            "I didn't quite get what you want. Please try again."
+            "Hmm, I couldn't tell if you want to chat or learn something new. Could you rephrase that?"
     }
 
 
@@ -181,6 +181,29 @@ object Chatbot {
     }
 
 
+    def isChatIntent(tokens: List[String]): Boolean = {
+        val keywords = Set("chat", "conversation", "convo", "speak", "gossip", "dialogue", "small talk")
+        val keywordMatch = tokens.exists(keywords.contains)
+
+        val flatChatQueries = DatasetLoader.conversationMap.keys.flatten.toSet
+        val queryPhraseMatch = tokens.exists(flatChatQueries.contains)
+
+        keywordMatch || queryPhraseMatch
+    }
+
+
+    def isFactIntent(tokens: List[String]): Boolean = {
+        val factKeywords = Set(
+            "fact", "facts", "sport", "sports",
+            "soccer", "basketball", "tennis",
+            "players", "players", "team", "teams",
+            "match", "matches", "game", "games",
+            "data", "information", "stats", "statistics"
+        )
+        tokens.exists(factKeywords.contains)
+    }
+
+
     def interact(input: String): String = {
         val tokens = parse(input)
         var response = ""
@@ -189,14 +212,24 @@ object Chatbot {
             case "default" => response = nextState(tokens)
             case "greeting" =>
                 user = extractName(tokens)
-                if (user == None) response = "I was not able to catch that. Please write your name clearly"
+                if (user == None) response = "Hmm, I didn’t quite catch your name. Could you write it a bit more clearly?"
                 else {
                     setState("default")
                     val username = user.get.capitalize
-                    response = s"Nice to meet you $username, do you have any questions about sports or do you just want to chat?"
+                    response = s"Nice to meet you, $username! Would you like to chat or explore some sports facts?"
                 }
-            case "chat" => response = chatReply(tokens).getOrElse("I'm not sure I understand what you mean. Maybe try asking in a different way")
-            case "facts" => response = generateFact(toFactQuery(tokens))
+            case "chat" => 
+                if (isFactIntent(tokens)) {
+                    setState("facts")
+                    response = "Ooh, switching gears to sports knowledge! Ask me anything."
+                }
+                response = chatReply(tokens).getOrElse("I'm not sure I got that. Try saying it a little differently?")
+            case "facts" => 
+                if (isChatIntent(tokens)) {
+                    setState("chat")
+                    response = "Alright! Let's take a break from the facts and just have a chat."
+                }
+                response = generateFact(toFactQuery(tokens))
         }
 
         if (user != None) logInteraction(input, response, user.get.capitalize)

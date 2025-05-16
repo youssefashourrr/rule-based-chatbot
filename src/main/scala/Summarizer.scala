@@ -5,14 +5,17 @@ import scala.jdk.CollectionConverters.*
 import scala.reflect.{ClassTag, classTag}
 import upickle.default._
 import java.io.File
+import java.net.URL
 import java.io.{FileWriter, BufferedWriter}
 import com.github.tototoshi.csv._
 
 
 object Summarizer {
+	
+	val filePath:String = "D:\\PBLB\\UNI\\CS219\\ChatBot\\RuledBased Bot\\src\\main\\resources" 
+	
 	def logInteraction(userInput: String, chatbotResponse: String, name: String): Unit = {
-		val file = new File("D:\\Hamdy\\ChatBot\\src\\main\\resources\\chat_log.json")
-
+		val file = new File(filePath + "\\chat_log.json")
 		// Step 1: Read existing JSON array or start fresh
 		val existingLogs: List[Map[String, String]] =
 			if (file.exists() && file.length() > 0)
@@ -37,8 +40,7 @@ object Summarizer {
 
 
 	def getInteractionLog(): List[(Int, String, String,String)] = {
-		val file = new java.io.File(
-		"D:\\Hamdy\\ChatBot\\src\\main\\resources\\chat_log.json")
+		val file = new File(filePath + "\\chat_log.json")
 		if (!file.exists()) return List.empty
 		val lines = Source.fromFile(file).getLines().toList
 		lines.zipWithIndex.map { case (line, idx) =>
@@ -51,7 +53,7 @@ object Summarizer {
 	}
 
 
-	def analyzeInteractions(log: List[(Int, String, String)]): String = {
+	def analyzeInteractions(log: List[(Int, String, String)]): String =
 		if (log.isEmpty) return "No interactions to analyze."
 		val fallbackResponses = Map(
 			"Hmm, I couldn't tell which sport you're asking about. Could you specify it more clearly?" ->
@@ -91,14 +93,11 @@ object Summarizer {
 		}
 
 		reportBuilder.toString()
-	}
-
 
 	def summarizeQuizResults(qOpt: Option[Question], res: Boolean): Unit =
 		if (qOpt.isEmpty) return
 		val q = qOpt.get
-		val file = new File(
-			"D:\\Hamdy\\ChatBot\\src\\main\\resources\\quizResults.csv")
+		val file = new File(filePath + "\\quiz_results.csv")
 		val headers = List("Question", "Category", "Total Asked", "Correct Results")
 
 		if (!file.exists()) {
@@ -141,13 +140,10 @@ object Summarizer {
 		}
 		writer.close()
 
+	def analyzeQuizPerformance(): String =
+		val file = new File(filePath + "\\quiz_results.csv")
+		val reader = CSVReader.open(file)
 
-	def analyzeQuizPerformance(): String = {
-		val reader = CSVReader.open(
-			new java.io.File(
-				"D:\\Hamdy\\ChatBot\\src\\main\\resources\\quizResults.csv"
-			)
-		)
 		val records = reader.all()
 
 		val processedData = records.drop(1).map { row =>
@@ -181,5 +177,5 @@ object Summarizer {
 				f"Success Rate: $successRate%.2f%%"
 		reader.close()
 		result
-	}
+
 }

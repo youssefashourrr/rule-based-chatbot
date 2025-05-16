@@ -6,6 +6,7 @@ import com.github.tototoshi.csv.*
 import DatasetLoader.*
 import ResourceLoader._
 import scala.io.Source
+import java.net.URL
 import upickle.default.write
 import upickle.default.{read, write, ReadWriter, macroRW}
 import java.io.{FileWriter, BufferedWriter}
@@ -14,6 +15,8 @@ object Quiz
 {
     private var questionChosen: Option[Question] = None
     private var askedQuestions: List[Option[Question]] = Nil
+    val filePath: String = "D:\\PBLB\\UNI\\CS219\\ChatBot\\RuledBased Bot\\src\\main\\resources"
+
 
     def selectQuizQuestions(category: String, mode: Boolean): (String, java.util.List[String]) =
         val questionBank = if (mode) mcq else frq
@@ -56,15 +59,15 @@ object Quiz
     private def summarizeQuizResults(qOpt: Option[Question], res: Boolean): Unit =
         if (qOpt.isEmpty) return
         val q = qOpt.get
-        val file = new File("D:\\Hamdy\\ChatBot\\src\\main\\resources\\quiz_results.csv")
+        val file = new File(filePath + "\\quiz_results.csv")
         val headers = List("Question", "Category", "Total Asked", "Correct Results")
 
         // Ensure file exists with headers
-        if (!file.exists()) {
+        if (!file.exists())
             val writer = CSVWriter.open(file)
             writer.writeRow(headers)
             writer.close()
-        }
+
 
         val reader = CSVReader.open(file)
         val allRows = reader.allWithHeaders()
@@ -101,67 +104,62 @@ object Quiz
         }
         writer.close()
 
-    def analyzeSuccessRate(): Int = {
-            val file = new File("D:\\Hamdy\\ChatBot\\src\\main\\resources\\quiz_results.csv")
-            if (!file.exists()) {
-              println("No quiz data found.")
-              return 0
+    private def analyzeSuccessRate(): Int =
+      val file = new File(filePath + "\\quiz_results.csv")
+      if (!file.exists())
+        println("No quiz data found.")
+        0
+
+      val lines = Source.fromFile(file).getLines().drop(1) // Skip header
+      var totalAsked = 0
+      var totalCorrect = 0
+      for (line <- lines)
+        val cols = line.split(",").map(_.trim)
+        if (cols.length >= 4)
+          val asked = cols(2).toIntOption.getOrElse(0)
+          val correct = cols(3).toIntOption.getOrElse(0)
+          totalAsked += asked
+          totalCorrect += correct
+
+          
+      if (totalAsked == 0) 0
+      else (totalCorrect.toDouble / totalAsked * 100).round.toInt
+
+    private def top3CategoryPercentages(): List[(String, Double)] =
+      val file = new File(filePath + "\\quiz_results.csv")
+      if (!file.exists())
+        println("No quiz data found.")
+        return List()
+
+          
+      val lines = Source.fromFile(file).getLines().drop(1) // skip header
+          
+      val categoryCounts = scala.collection.mutable.Map[String, Int]()
+      var totalQuestions = 0
+          
+      for (line <- lines)
+        val cols = line.split(",").map(_.trim)
+        if (cols.length >= 3)
+          val category = cols(1)
+          val asked = cols(2).toIntOption.getOrElse(0)
+          totalQuestions += asked
+          categoryCounts(category) = categoryCounts.getOrElse(category, 0) + asked
+
+
+      if (totalQuestions == 0 || categoryCounts.isEmpty) return List()
+          
+        categoryCounts.toList
+          .sortBy(-_._2)
+          .take(3)
+          .map { case (category, count) =>
+            val percentage = (count.toDouble / totalQuestions) * 100
+            (category, BigDecimal(percentage).setScale(2, BigDecimal.RoundingMode.HALF_UP).toDouble)
             }
-          
-            val lines = Source.fromFile(file).getLines().drop(1) // Skip header
-            var totalAsked = 0
-            var totalCorrect = 0
-          
-            for (line <- lines) {
-              val cols = line.split(",").map(_.trim)
-              if (cols.length >= 4) {
-                val asked = cols(2).toIntOption.getOrElse(0)
-                val correct = cols(3).toIntOption.getOrElse(0)
-                totalAsked += asked
-                totalCorrect += correct
-              }
-            }
-          
-            if (totalAsked == 0) 0
-            else (totalCorrect.toDouble / totalAsked * 100).round.toInt
-          }
-      def top3CategoryPercentages(): List[(String, Double)] = {
-            val file = new File("D:\\Hamdy\\ChatBot\\src\\main\\resources\\quiz_results.csv")
-            if (!file.exists()) {
-              println("No quiz data found.")
-              return List()
-            }
-          
-            val lines = Source.fromFile(file).getLines().drop(1) // skip header
-          
-            val categoryCounts = scala.collection.mutable.Map[String, Int]()
-            var totalQuestions = 0
-          
-            for (line <- lines) {
-              val cols = line.split(",").map(_.trim)
-              if (cols.length >= 3) {
-                val category = cols(1)
-                val asked = cols(2).toIntOption.getOrElse(0)
-                totalQuestions += asked
-                categoryCounts(category) = categoryCounts.getOrElse(category, 0) + asked
-              }
-            }
-          
-            if (totalQuestions == 0 || categoryCounts.isEmpty) return List()
-          
-            categoryCounts.toList
-              .sortBy(-_._2)
-              .take(3)
-              .map { case (category, count) =>
-                val percentage = (count.toDouble / totalQuestions) * 100
-                (category, BigDecimal(percentage).setScale(2, BigDecimal.RoundingMode.HALF_UP).toDouble)
-              }
-          }
-      def analyzeQuizPerformance(): java.util.List[(String, java.lang.Double)] = {
-            val sr = analyzeSuccessRate().toDouble
-            val categories = top3CategoryPercentages()
-            val combined = ("Success Rate", sr) :: categories
-            import scala.jdk.CollectionConverters._
-            combined.map { case (s, d) => (s, d: java.lang.Double) }.asJava
-          }
+
+    def analyzeQuizPerformance(): java.util.List[(String, java.lang.Double)] =
+      val sr = analyzeSuccessRate().toDouble
+      val categories = top3CategoryPercentages()
+      val combined = ("Success Rate", sr) :: categories
+      combined.map { case (s, d) => (s, d: java.lang.Double)}.asJava
+
 }

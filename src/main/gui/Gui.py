@@ -373,13 +373,15 @@ elif st.session_state.current_view == "analysis":
     except Exception as e:
         st.error(f"Error processing quiz performance: {e}")
 
+
+#Pervious Chats
 elif st.session_state.current_view == "history":
     st.title("📜 Previous Chat History")
     st.caption("See what other users asked and how the bot responded.")
 
     try:
         # Replace 'chat_history.json' with your actual file path
-        with open("D:\\Hamdy\\ChatBot\\src\\main\\resources\\chat_log.json", "r") as file:
+        with open("D:\\PBLB\\UNI\\CS219\\ChatBot\\RuledBased Bot\\src\\main\\resources\\chat_log.json", "r") as file:
             chat_data = json.load(file)
 
         if chat_data:

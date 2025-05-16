@@ -9,8 +9,6 @@ all
 am
 an
 and
-any
-are
 aren
 aren't
 as
@@ -32,11 +30,9 @@ d
 did
 didn
 didn't
-do
 does
 doesn
 doesn't
-doing
 don
 don't
 down
@@ -74,10 +70,8 @@ i'll
 i'm
 in
 into
-is
 isn
 isn't
-it
 it'd
 it'll
 it's
@@ -88,13 +82,11 @@ just
 ll
 m
 ma
-me
 mightn
 mightn't
 more
 mustn
 mustn't
-my
 myself
 needn
 needn't
@@ -136,7 +128,6 @@ t
 than
 that
 that'll
-the
 their
 theirs
 them
@@ -181,10 +172,8 @@ won't
 wouldn
 wouldn't
 y
-you
 you'd
 you'll
-your
 you're
 yours
 yourself

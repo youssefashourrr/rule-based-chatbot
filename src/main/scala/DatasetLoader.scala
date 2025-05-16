@@ -76,7 +76,7 @@ object DatasetLoader {
     }
 
     private def loadConversation(): Map[List[String], List[String]] = {
-        val source = Source.fromResource("conversation_data.json").mkString
+        val source = Source.fromResource("conversation_responses.json").mkString
         val entries: List[ConversationEntry] = read[List[ConversationEntry]](source)
       
         entries.map(entry => entry.queries -> entry.replies).toMap

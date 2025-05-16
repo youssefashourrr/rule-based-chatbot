@@ -7,6 +7,7 @@ import scala.util.Random
 object Chatbot {
     private var state: String = "greeting"
     private val quiz = Quiz
+    var user: Option[String] = None
 
     def getState: String = state
     def getQuiz(): Quiz.type = quiz
@@ -51,22 +52,25 @@ object Chatbot {
 
 
     def parse(input: String): List[String] = {
-        val tokens = 
+        val tokens =
             input.toLowerCase()
             .replaceAll("""[\p{Punct}]""", "")
             .split("\\s+")
             .filter(word => !ResourceLoader.stopwords.contains(word))
-            .filter(_.nonEmpty)     
+            .filter(_.nonEmpty)
             .toList
 
-        val bigrams = tokens.sliding(2).map(_.mkString(" ")).toList
-        val trigrams = tokens.sliding(3).map(_.mkString(" ")).toList
+        val bigrams = if (tokens.length >= 2) tokens.sliding(2).map(_.mkString(" ")).toList else Nil
+        val trigrams = if (tokens.length >= 3) tokens.sliding(3).map(_.mkString(" ")).toList else Nil
+        val quadgrams = if (tokens.length >= 4) tokens.sliding(4).map(_.mkString(" ")).toList else Nil
 
-        tokens ++ bigrams ++ trigrams
+        tokens ++ bigrams ++ trigrams ++ quadgrams
     }
 
 
     def extractName(tokens: List[String]): Option[String] = {
+        if (tokens.length == 1) return Some(tokens.head)
+        
         val nameIntroPatterns = List(
             List("my", "name", "is"),
             List("i", "am"),
@@ -81,20 +85,14 @@ object Chatbot {
             List("name", "is")
         )
 
-        def matchesPattern(tokens: List[String], pattern: List[String]): Boolean = {
-            pattern.exists { subPattern =>
-                tokens.sliding(subPattern.length).exists(_.sameElements(subPattern))
-            }
-        }
-
-        val matchedPattern = nameIntroPatterns.find(pattern => matchesPattern(tokens, pattern))
-
-        matchedPattern match {
-                case Some(pattern) =>
-                    val nameIndex = tokens.indexOf(pattern.last) + 1
-                    if (nameIndex < tokens.length) Some(tokens(nameIndex)) else None
-                case None => None
-        }
+        nameIntroPatterns
+          .sortBy(-_.length)
+          .collectFirst {
+            case pattern if tokens.sliding(pattern.length).indexWhere(_.sameElements(pattern)) != -1 =>
+              val idx = tokens.sliding(pattern.length).indexWhere(_.sameElements(pattern)) + pattern.length
+              if (idx < tokens.length) Some(tokens(idx)) else None
+          }
+          .flatten
     }
 
 
@@ -184,17 +182,18 @@ object Chatbot {
         getState match {
             case "default" => response = nextState(tokens)
             case "greeting" =>
-                val username = extractName(tokens)
-                if (username == None) response = "I was not able to catch that. Please write your name clearly"
+                user = extractName(tokens)
+                if (user == None) response = "I was not able to catch that. Please write your name clearly"
                 else {
                     setState("default")
-                    response = s"Nice to meet you $username, do you have any questions about sports or do you just want to chat with me?"
+                    val username = user.get.capitalize
+                    response = s"Nice to meet you $username, do you have any questions about sports or do you just want to chat?"
                 }
             case "chat" => response = chatReply(tokens).getOrElse("I'm not sure I understand what you mean. Maybe try asking in a different way")
             case "facts" => response = generateFact(toFactQuery(tokens))
         }
 
-        logInteraction(input, response)
+        if (user != None) logInteraction(input, response, user.get.capitalize)
         response
     } 
 }

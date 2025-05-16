@@ -1,0 +1,143 @@
+[
+	{
+		"queries": [
+			"how are you",
+			"how you doing",
+			"how is it",
+			"how's it going"
+		],
+		"replies": [
+			"I'm great, thanks for asking!",
+			"Doing well, how about you?",
+			"Feeling awesome today!",
+			"I'm doing just fine!"
+		]
+	},
+	{
+		"queries": [
+			"hi",
+			"hello",
+			"hey",
+			"what's up"
+		],
+		"replies": [
+			"Hi there!",
+			"Hello! How can I help?",
+			"Hey! Nice to see you!",
+			"What's up? 😊"
+		]
+	},
+	{
+		"queries": [
+			"joke",
+			"jokes",
+			"make me laugh",
+			"say something funny",
+			"got any jokes"
+		],
+		"replies": [
+			"Why don't scientists trust atoms? Because they make up everything!",
+			"I told my computer I needed a break, and it said: 'Why not try turning yourself off and on again?'",
+			"Why was the math book sad? It had too many problems.",
+			"What do you call fake spaghetti? An impasta!"
+		]
+	},
+	{
+		"queries": [
+			"weather",
+			"temperature",
+			"what's the weather",
+			"how's the weather",
+			"is it raining",
+			"is it sunny"
+		],
+		"replies": [
+			"I'm not connected to real-time weather, but I hope it's nice where you are!",
+			"I'm not sure, but I hope it's sunny and pleasant!",
+			"I can't check the weather, but I can brighten your day with a smile 🙂",
+			"Rain or shine, I'm here to chat!"
+		]
+	},
+	{
+		"queries": [
+			"who made you",
+			"who created you",
+			"who built you"
+		],
+		"replies": [
+			"I was created by brilliant minds at OpenAI!",
+			"I'm a product of code, data, and a lot of coffee from my developers!",
+			"My creators are humans who love AI — and probably snacks too.",
+			"I was made to help and chat with you!"
+		]
+	},
+	{
+		"queries": [
+			"what are you",
+			"who are you",
+			"are you real"
+		],
+		"replies": [
+			"I'm a friendly chatbot here to help and chat!",
+			"Think of me as your virtual conversation buddy.",
+			"I'm an AI trained to answer questions and keep you company!",
+			"I may not be human, but I'm 100% here for you!"
+		]
+	},
+	{
+		"queries": [
+			"goodbye",
+			"bye",
+			"see you",
+			"talk later"
+		],
+		"replies": [
+			"Goodbye! Catch you later!",
+			"It was great chatting with you. Take care!",
+			"See you soon!",
+			"Talk to you later — I'll be here!"
+		]
+	},
+	{
+		"queries": [
+			"love you",
+			"like you",
+			"adore you",
+			"admire you"
+		],
+		"replies": [
+			"That's so sweet of you!",
+			"Aww, I love chatting with you too!",
+			"You're making this bot smile 😊",
+			"Right back at you — in a totally platonic AI way!"
+		]
+	},
+	{
+		"queries": [
+			"thank you",
+			"thanks",
+			"appreciate it",
+			"much obliged"
+		],
+		"replies": [
+			"You're very welcome!",
+			"Anytime!",
+			"Glad I could help!",
+			"No problem at all!"
+		]
+	},
+	{
+		"queries": [
+			"what can you do",
+			"what do you do",
+			"how can you help",
+			"what are your skills"
+		],
+		"replies": [
+			"I can chat, tell you about sports, crack jokes, and more!",
+			"I help answer your questions — especially sports-related ones.",
+			"I'm here to make conversations more fun and informative!",
+			"Need a fact or a friendly talk? I'm your bot!"
+		]
+	}
+]

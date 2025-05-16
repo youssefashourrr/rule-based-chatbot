@@ -10,8 +10,8 @@ import com.github.tototoshi.csv._
 
 
 object Summarizer {
-	def logInteraction(userInput: String, chatbotResponse: String): Unit = {
-		val interaction = Map("userInput" -> userInput, "chatbotResponse" -> chatbotResponse)
+	def logInteraction(userInput: String, chatbotResponse: String , name:String): Unit = {
+		val interaction = Map("Name" -> name ,"userInput" -> userInput, "chatbotResponse" -> chatbotResponse)
 		val json = write(interaction)
 		val file = new java.io.File("C:\\University\\Year two- semster two\\Advanced prog\\rule-based-chatbot\\src\\main\\resources\\chat_log.json")
 		val writer = new BufferedWriter(new FileWriter(file, true)) // append mode
@@ -23,7 +23,7 @@ object Summarizer {
 	}
 
 
-	def getInteractionLog(): List[(Int, String, String)] = {
+	def getInteractionLog(): List[(Int, String, String,String)] = {
 		val file = new java.io.File(
 		"C:\\University\\Year two- semster two\\Advanced prog\\rule-based-chatbot\\src\\main\\resources\\chat_log.json")
 		if (!file.exists()) return List.empty
@@ -32,7 +32,8 @@ object Summarizer {
 			val data = read[Map[String, String]](line)
 			val userInput = data.getOrElse("userInput", "")
 			val chatbotResponse = data.getOrElse("chatbotResponse", "")
-			(idx + 1, userInput, chatbotResponse)
+			val name = data.getOrElse("Name", "")
+			(idx + 1, name ,userInput, chatbotResponse)
 		}
 	}
 

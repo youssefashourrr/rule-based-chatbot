@@ -300,7 +300,7 @@ elif st.session_state.current_view == "analysis":
     st.caption("See how you've been doing in your quizzes.")
 
     try:
-        summary_data = bot.getQuiz().analyzeQuizPerformance()
+        summary_data = bot.getQuiz().getQuizPerformance()
 
         if summary_data is not None:
             summary_list = list(summary_data)

@@ -1,13 +1,13 @@
-import DatasetLoader._
-import scala.util.Random
+
+
 import scala.io.Source
 import scala.jdk.CollectionConverters.*
 import scala.reflect.{ClassTag, classTag}
-import upickle.default._
+import upickle.default.*
+
 import java.io.File
-import java.net.URL
-import java.io.{FileWriter, BufferedWriter}
-import com.github.tototoshi.csv._
+import java.io.{BufferedWriter, FileWriter}
+import com.github.tototoshi.csv.*
 
 
 object Summarizer {
@@ -100,16 +100,18 @@ object Summarizer {
 		val file = new File(filePath + "\\quiz_results.csv")
 		val headers = List("Question", "Category", "Total Asked", "Correct Results")
 
-		if (!file.exists()) {
+		// Ensure file exists with headers
+		if (!file.exists())
 			val writer = CSVWriter.open(file)
 			writer.writeRow(headers)
 			writer.close()
-		}
+
 
 		val reader = CSVReader.open(file)
 		val allRows = reader.allWithHeaders()
 		reader.close()
 
+		// Update or add row
 		val (existingRows, others) = allRows.partition(_("Question") == q.content)
 
 		val updatedRow = existingRows.headOption match {
@@ -140,42 +142,61 @@ object Summarizer {
 		}
 		writer.close()
 
-	def analyzeQuizPerformance(): String =
-		val file = new File(filePath + "\\quiz_results.csv")
-		val reader = CSVReader.open(file)
+	private def analyzeSuccessRate(): Int =
+			val file = new File(filePath + "\\quiz_results.csv")
+			if (!file.exists())
+				println("No quiz data found.")
+				0
 
-		val records = reader.all()
+			val lines = Source.fromFile(file).getLines().drop(1) // Skip header
+			var totalAsked = 0
+			var totalCorrect = 0
+			for (line <- lines)
+				val cols = line.split(",").map(_.trim)
+				if (cols.length >= 4)
+					val asked = cols(2).toIntOption.getOrElse(0)
+					val correct = cols(3).toIntOption.getOrElse(0)
+					totalAsked += asked
+					totalCorrect += correct
 
-		val processedData = records.drop(1).map { row =>
-			val category = row(1)
-			val totalAsked = row(2).toInt
-			val correctResults = row(3).toInt
-			(category, totalAsked, correctResults)
-		}
 
-		val categoryCount = processedData
-			.groupBy(_._1)
-			.mapValues(
-				_.map(_._2).sum
-			)
-		val mostAskedCategory =
-			categoryCount.maxBy(_._2)
-		val mostAskedCategoryName = mostAskedCategory._1
-		val mostAskedCategoryCount = mostAskedCategory._2
+			if (totalAsked == 0) 0
+			else (totalCorrect.toDouble / totalAsked * 100).round.toInt
 
-		val totalQuestions =
-			processedData.map(_._2).sum 
-		val totalCorrectAnswers =
-			processedData.map(_._3).sum
-		val successRate =
-			if (totalQuestions > 0)
-				(totalCorrectAnswers.toDouble / totalQuestions) * 100
-			else 0.0
+	private def top3CategoryPercentages(): List[(String, Double)] =
+			val file = new File(filePath + "\\quiz_results.csv")
+			if (!file.exists())
+				println("No quiz data found.")
+				return List()
 
-		val result =
-			s"Most Asked Category: $mostAskedCategoryName ($mostAskedCategoryCount questions), " +
-				f"Success Rate: $successRate%.2f%%"
-		reader.close()
-		result
 
+			val lines = Source.fromFile(file).getLines().drop(1) // skip header
+
+			val categoryCounts = scala.collection.mutable.Map[String, Int]()
+			var totalQuestions = 0
+
+			for (line <- lines)
+				val cols = line.split(",").map(_.trim)
+				if (cols.length >= 3)
+					val category = cols(1)
+					val asked = cols(2).toIntOption.getOrElse(0)
+					totalQuestions += asked
+					categoryCounts(category) = categoryCounts.getOrElse(category, 0) + asked
+
+
+			if (totalQuestions == 0 || categoryCounts.isEmpty) return List()
+
+			categoryCounts.toList
+				.sortBy(-_._2)
+				.take(3)
+				.map { case (category, count) =>
+					val percentage = (count.toDouble / totalQuestions) * 100
+					(category, BigDecimal(percentage).setScale(2, BigDecimal.RoundingMode.HALF_UP).toDouble)
+				}
+
+	def analyzeQuizPerformance(): java.util.List[(String, java.lang.Double)] =
+		val sr = analyzeSuccessRate().toDouble
+		val categories = top3CategoryPercentages()
+		val combined = ("Success Rate", sr) :: categories
+		combined.map { case (s, d) => (s, d: java.lang.Double) }.asJava
 }

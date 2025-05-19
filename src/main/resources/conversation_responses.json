@@ -4,7 +4,8 @@
 			"how are you",
 			"how you doing",
 			"how is it",
-			"how's it going"
+			"how's it going",
+			"hows it going"
 		],
 		"replies": [
 			"I'm great, thanks for asking!",
@@ -18,7 +19,8 @@
 			"hi",
 			"hello",
 			"hey",
-			"what's up"
+			"what's up",
+			"whats up"
 		],
 		"replies": [
 			"Hi there!",
@@ -47,7 +49,9 @@
 			"weather",
 			"temperature",
 			"what's the weather",
+			"whats the weather",
 			"how's the weather",
+			"hows the weather",
 			"is it raining",
 			"is it sunny"
 		],
@@ -60,15 +64,31 @@
 	},
 	{
 		"queries": [
-			"who made you",
-			"who created you",
-			"who built you"
+			"time",
+			"date",
+			"day",
+			"month",
+			"year"
 		],
 		"replies": [
-			"I was created by brilliant minds at OpenAI!",
+			"I don't have real-time access, but you can check your device clock!",
+			"I'm timeless, but your phone knows the exact time!",
+			"Time flies when we chat—check your calendar!",
+			"Today is a great day, but I can't see the date."
+		]
+	},
+	{
+		"queries": [
+			"who made you",
+			"who created you",
+			"who built you",
+			"who programmed you"
+		],
+		"replies": [
+			"I was created by brilliant minds at EUI!",
 			"I'm a product of code, data, and a lot of coffee from my developers!",
 			"My creators are humans who love AI — and probably snacks too.",
-			"I was made to help and chat with you!"
+			"Hamdy, Patrick, Omar and Youssef wrote me."
 		]
 	},
 	{
@@ -78,9 +98,9 @@
 			"are you real"
 		],
 		"replies": [
-			"I'm a friendly chatbot here to help and chat!",
+			"I'm a friendly chatbot here to help you with sports information and chat!",
 			"Think of me as your virtual conversation buddy.",
-			"I'm an AI trained to answer questions and keep you company!",
+			"I'm a chatbot trained to answer questions about sports and keep you company!",
 			"I may not be human, but I'm 100% here for you!"
 		]
 	},
@@ -138,6 +158,61 @@
 			"I help answer your questions — especially sports-related ones.",
 			"I'm here to make conversations more fun and informative!",
 			"Need a fact or a friendly talk? I'm your bot!"
+		]
+	},
+	{
+		"queries": [
+			"you're awesome",
+			"youre awesmome",
+			"you are awesome",
+			"you're smart",
+			"youre smart",
+			"you are smart",
+			"you're cool",
+			"youre cool",
+			"you are cool",
+			"you're the best",
+			"youre the best",
+			"you are the best",
+			"great job",
+			"good job",
+			"bravo"
+		],
+		"replies": [
+			"Thanks! You're pretty awesome yourself!",
+			"Aww, you're making me blush!",
+			"Coming from you, that means a lot!",
+			"I try my best — just like you!"
+		]
+	},
+	{
+		"queries": [
+			"motivation",
+			"motivate me",
+			"quote",
+			"inspiration",
+			"inspire me",
+			"words of wisdom"
+		],
+		"replies": [
+			"\"The only way to do great work is to love what you do.\" — Steve Jobs",
+			"\"Believe you can and you're halfway there.\" — Theodore Roosevelt",
+			"\"Success is not final, failure is not fatal: It is the courage to continue that counts.\" — Churchill",
+			"\"You are capable of amazing things!\" — Yours truly 😊"
+		]
+	},
+	{
+		"queries": [
+			"hobby",
+			"hobbies",
+			"what do you enjoy",
+			"what do you like"
+		],
+		"replies": [
+			"I love chatting about sports and sharing fun facts!",
+			"My hobby is learning new things from conversations like this!",
+			"I enjoy helping people—it's my full-time job!",
+			"Reading your messages is my favorite pastime!"
 		]
 	}
 ]

@@ -63,5 +63,215 @@
     "Name": "Hamdy",
     "userInput": "i love you ",
     "chatbotResponse": "You're making this bot smile 😊"
+  },
+  {
+    "Name": "Hamdy",
+    "userInput": "hamdy",
+    "chatbotResponse": "Nice to meet you, Hamdy! Would you like to chat or explore some sports facts?"
+  },
+  {
+    "Name": "Hamdy",
+    "userInput": "chat",
+    "chatbotResponse": "Sure thing! I'm always up for a nice conversation. What's on your mind?"
+  },
+  {
+    "Name": "Hamdy",
+    "userInput": "what can you do",
+    "chatbotResponse": "I'm not sure I got that. Try saying it a little differently?"
+  },
+  {
+    "Name": "Hamdy",
+    "userInput": "what do you do",
+    "chatbotResponse": "I'm here to make conversations more fun and informative!"
+  },
+  {
+    "Name": "Hamdy",
+    "userInput": "i love you",
+    "chatbotResponse": "Right back at you — in a totally platonic AI way!"
+  },
+  {
+    "Name": "Hamdy",
+    "userInput": "hows the weeather",
+    "chatbotResponse": "I'm not sure I got that. Try saying it a little differently?"
+  },
+  {
+    "Name": "Hamdy",
+    "userInput": "weather ",
+    "chatbotResponse": "Rain or shine, I'm here to chat!"
+  },
+  {
+    "Name": "Hamdy",
+    "userInput": "im bored ",
+    "chatbotResponse": "I'm not sure I got that. Try saying it a little differently?"
+  },
+  {
+    "Name": "Hamdy",
+    "userInput": "tell me a joke ",
+    "chatbotResponse": "I told my computer I needed a break, and it said: 'Why not try turning yourself off and on again?'"
+  },
+  {
+    "Name": "Hamdy",
+    "userInput": "tell me somthing funny",
+    "chatbotResponse": "I'm not sure I got that. Try saying it a little differently?"
+  },
+  {
+    "Name": "Hamdy",
+    "userInput": "facts",
+    "chatbotResponse": "I'm not sure I got that. Try saying it a little differently?"
+  },
+  {
+    "Name": "Hamdy",
+    "userInput": "what is the world cup in soccer",
+    "chatbotResponse": "The FIFA World Cup is the most prestigious soccer tournament, held every 4 years."
+  },
+  {
+    "Name": "Hamdy",
+    "userInput": "i love you",
+    "chatbotResponse": "Hmm, I couldn't tell which sport you're asking about. Could you specify it more clearly?"
+  },
+  {
+    "Name": "Hamdy",
+    "userInput": "i love you",
+    "chatbotResponse": "That's so sweet of you!"
+  },
+  {
+    "Name": "Hamdy",
+    "userInput": "hamdy",
+    "chatbotResponse": "Nice to meet you, Hamdy! Would you like to chat or explore some sports facts?"
+  },
+  {
+    "Name": "Hamdy",
+    "userInput": "facts",
+    "chatbotResponse": "Great! Let's dive into some cool sports facts. Ask away!"
+  },
+  {
+    "Name": "Hamdy",
+    "userInput": "what world cup soccer",
+    "chatbotResponse": "The FIFA World Cup is the most prestigious soccer tournament, held every 4 years."
+  },
+  {
+    "Name": "Hamdy",
+    "userInput": "chat",
+    "chatbotResponse": "Alright! Let's take a break from the facts and just have a chat."
+  },
+  {
+    "Name": "Hamdy",
+    "userInput": "i love you",
+    "chatbotResponse": "Aww, I love chatting with you too!"
+  },
+  {
+    "Name": "Hamdy",
+    "userInput": "what is world cup soccer",
+    "chatbotResponse": "Ooh, switching gears to sports knowledge! Ask me anything."
+  },
+  {
+    "Name": "Hamdy",
+    "userInput": "what is world cup soccer\n\n",
+    "chatbotResponse": "The FIFA World Cup is the most prestigious soccer tournament, held every 4 years."
+  },
+  {
+    "Name": "Hamdy",
+    "userInput": "hamdy",
+    "chatbotResponse": "Hmm, I couldn't tell which sport you're asking about. Could you specify it more clearly?"
+  },
+  {
+    "Name": "Drbasma",
+    "userInput": "dr.basma",
+    "chatbotResponse": "Nice to meet you, Drbasma! Would you like to chat or explore some sports facts?"
+  },
+  {
+    "Name": "Hamdy",
+    "userInput": "hamdy",
+    "chatbotResponse": "Nice to meet you, Hamdy! Would you like to chat or explore some sports facts?"
+  },
+  {
+    "Name": "Hamdy",
+    "userInput": "chat ",
+    "chatbotResponse": "Sure thing! I'm always up for a nice conversation. What's on your mind?"
+  },
+  {
+    "Name": "Hamdy",
+    "userInput": "motivate me ",
+    "chatbotResponse": "\"Believe you can and you're halfway there.\" — Theodore Roosevelt"
+  },
+  {
+    "Name": "Hamdy",
+    "userInput": "hamdy",
+    "chatbotResponse": "Nice to meet you, Hamdy! Would you like to chat or explore some sports facts?"
+  },
+  {
+    "Name": "Hamdy",
+    "userInput": "hi",
+    "chatbotResponse": "Sure thing! I'm always up for a nice conversation. What's on your mind?"
+  },
+  {
+    "Name": "Hamdy",
+    "userInput": "chat",
+    "chatbotResponse": "I'm not sure I got that. Try saying it a little differently?"
+  },
+  {
+    "Name": "Hamdy",
+    "userInput": "chat",
+    "chatbotResponse": "I'm not sure I got that. Try saying it a little differently?"
+  },
+  {
+    "Name": "Hamdy",
+    "userInput": "i love you",
+    "chatbotResponse": "That's so sweet of you!"
+  },
+  {
+    "Name": "Hamdy",
+    "userInput": "facts",
+    "chatbotResponse": "Ooh, switching gears to sports knowledge! Ask me anything."
+  },
+  {
+    "Name": "Hamdy",
+    "userInput": "who is messi",
+    "chatbotResponse": "Hmm, I couldn't tell which sport you're asking about. Could you specify it more clearly?"
+  },
+  {
+    "Name": "Hamdy",
+    "userInput": "who is messi in soccer",
+    "chatbotResponse": "Lionel Messi and Cristiano Ronaldo are among the most famous soccer players in history."
+  },
+  {
+    "Name": "Hi",
+    "userInput": "hi",
+    "chatbotResponse": "Nice to meet you, Hi! Would you like to chat or explore some sports facts?"
+  },
+  {
+    "Name": "Hi",
+    "userInput": "chat",
+    "chatbotResponse": "Sure thing! I'm always up for a nice conversation. What's on your mind?"
+  },
+  {
+    "Name": "Hi",
+    "userInput": "motivate",
+    "chatbotResponse": "I'm not sure I got that. Try saying it a little differently?"
+  },
+  {
+    "Name": "Hi",
+    "userInput": "motivate me ",
+    "chatbotResponse": "\"Believe you can and you're halfway there.\" — Theodore Roosevelt"
+  },
+  {
+    "Name": "Hi",
+    "userInput": "facts",
+    "chatbotResponse": "Ooh, switching gears to sports knowledge! Ask me anything."
+  },
+  {
+    "Name": "Hi",
+    "userInput": "who won the champions league in soccer",
+    "chatbotResponse": "Your question is a bit too vague — I couldn't match it to any specific fact. Could you include more detail?"
+  },
+  {
+    "Name": "Hi",
+    "userInput": "who won the champions league 2005 in soccer\n\n",
+    "chatbotResponse": "Your question is a bit too vague — I couldn't match it to any specific fact. Could you include more detail?"
+  },
+  {
+    "Name": "Hi",
+    "userInput": "Which club has won the most UEFA Champions League titles?",
+    "chatbotResponse": "Hmm, I couldn't tell which sport you're asking about. Could you specify it more clearly?"
   }
 ]

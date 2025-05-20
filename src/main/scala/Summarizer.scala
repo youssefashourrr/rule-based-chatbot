@@ -12,10 +12,10 @@ import com.github.tototoshi.csv.*
 
 object Summarizer {
 	
-	val filePath:String = "D:\\PBLB\\UNI\\CS219\\ChatBot\\RuledBased Bot\\src\\main\\resources" 
+	val filePath:String = "src/main/resources" 
 	
 	def logInteraction(userInput: String, chatbotResponse: String, name: String): Unit = {
-		val file = new File(filePath + "\\chat_log.json")
+		val file = new File(filePath + "/chat_log.json")
 		// Step 1: Read existing JSON array or start fresh
 		val existingLogs: List[Map[String, String]] =
 			if (file.exists() && file.length() > 0)
@@ -40,7 +40,7 @@ object Summarizer {
 
 
 	def getInteractionLog(): List[(Int, String, String,String)] = {
-		val file = new File(filePath + "\\chat_log.json")
+		val file = new File(filePath + "/chat_log.json")
 		if (!file.exists()) return List.empty
 		val lines = Source.fromFile(file).getLines().toList
 		lines.zipWithIndex.map { case (line, idx) =>
@@ -97,7 +97,7 @@ object Summarizer {
 	def summarizeQuizResults(qOpt: Option[Question], res: Boolean): Unit =
 		if (qOpt.isEmpty) return
 		val q = qOpt.get
-		val file = new File(filePath + "\\quiz_results.csv")
+		val file = new File(filePath + "/quiz_results.csv")
 		val headers = List("Question", "Category", "Total Asked", "Correct Results")
 
 		// Ensure file exists with headers
@@ -143,7 +143,7 @@ object Summarizer {
 		writer.close()
 
 	private def analyzeSuccessRate(): Int =
-			val file = new File(filePath + "\\quiz_results.csv")
+			val file = new File(filePath + "/quiz_results.csv")
 			if (!file.exists())
 				println("No quiz data found.")
 				0
@@ -164,7 +164,7 @@ object Summarizer {
 			else (totalCorrect.toDouble / totalAsked * 100).round.toInt
 
 	private def top3CategoryPercentages(): List[(String, Double)] =
-			val file = new File(filePath + "\\quiz_results.csv")
+			val file = new File(filePath + "/quiz_results.csv")
 			if (!file.exists())
 				println("No quiz data found.")
 				return List()

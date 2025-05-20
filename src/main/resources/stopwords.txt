@@ -23,7 +23,6 @@ between
 both
 but
 by
-can
 couldn
 couldn't
 d
@@ -143,7 +142,6 @@ they've
 this
 those
 through
-to
 too
 under
 until

@@ -381,7 +381,7 @@ elif st.session_state.current_view == "history":
 
     try:
         # Replace 'chat_history.json' with your actual file path
-        with open("D:\\PBLB\\UNI\\CS219\\ChatBot\\RuledBased Bot\\src\\main\\resources\\chat_log.json", "r") as file:
+        with open("src/main/resources/chat_log.json", "r") as file:
             chat_data = json.load(file)
 
         if chat_data:

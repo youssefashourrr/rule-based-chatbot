@@ -34,7 +34,7 @@
 			"joke",
 			"jokes",
 			"make me laugh",
-			"say something funny",
+			"funny",
 			"got any jokes"
 		],
 		"replies": [
@@ -188,10 +188,10 @@
 	{
 		"queries": [
 			"motivation",
-			"motivate me",
+			"motivate",
 			"quote",
 			"inspiration",
-			"inspire me",
+			"inspire",
 			"words of wisdom"
 		],
 		"replies": [
@@ -213,6 +213,17 @@
 			"My hobby is learning new things from conversations like this!",
 			"I enjoy helping people—it's my full-time job!",
 			"Reading your messages is my favorite pastime!"
+		]
+	},
+	{
+		"queries": [
+			"bored",
+			"nothing to do"
+		],
+		"replies": [
+			"Let's fix that! Want a fun fact, a joke, or a quiz?",
+			"Sounds like the perfect time to learn something interesting!",
+			"I can keep you company — want to chat or play a quiz?"
 		]
 	}
 ]

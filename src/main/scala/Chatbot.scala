@@ -212,7 +212,7 @@ object Chatbot {
             case "default" => response = nextState(tokens)
             case "greeting" =>
                 user = extractName(tokens)
-                if (user == None) response = "Hmm, I didn’t quite catch your name. Could you write it a bit more clearly?"
+                if (user == None) response = "Hmm, I didn't quite catch your name. Could you write it a bit more clearly?"
                 else {
                     setState("default")
                     val username = user.get.capitalize
@@ -223,13 +223,13 @@ object Chatbot {
                     setState("facts")
                     response = "Ooh, switching gears to sports knowledge! Ask me anything."
                 }
-                response = chatReply(tokens).getOrElse("I'm not sure I got that. Try saying it a little differently?")
+                else response = chatReply(tokens).getOrElse("I'm not sure I got that. Try saying it a little differently?")
             case "facts" => 
                 if (isChatIntent(tokens)) {
                     setState("chat")
                     response = "Alright! Let's take a break from the facts and just have a chat."
                 }
-                response = generateFact(toFactQuery(tokens))
+                else response = generateFact(toFactQuery(tokens))
         }
 
         if (user != None) logInteraction(input, response, user.get.capitalize)

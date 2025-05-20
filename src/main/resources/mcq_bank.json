@@ -30,7 +30,7 @@
         "answer": "Real Madrid"
     },
     {
-        "sport": "soccer",
+        "sport": "soccer",  
         "content": "What is the color of a card shown for a serious foul?",
         "options": ["Green", "Yellow", "Blue", "Red"],
         "answer": "Red"

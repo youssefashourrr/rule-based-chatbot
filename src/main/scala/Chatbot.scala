@@ -68,10 +68,16 @@ object Chatbot {
     }
 
 
-
     def extractName(tokens: List[String]): Option[String] = {
-        if (tokens.length == 1) return Some(tokens.head)
-    
+        val titles = Set(
+            "mr", "mrs", "miss", "ms", "mx",
+            "dr", "prof", "sir", "madam",
+            "lord", "lady",
+            "hon", "pres", "gov", "sen", "rep",
+            "capt", "cmdr", "lt", "gen", "maj", "col", "sgt", "cpl", "pvt",
+            "chief", "officer"
+        )
+
         val nameIntroPatterns = List(
             List("my", "name", "is"),
             List("i", "am"),
@@ -85,20 +91,28 @@ object Chatbot {
             List("known", "as"),
             List("name", "is")
         )
-    
-        nameIntroPatterns
-          .sortBy(-_.length)
-          .collectFirst {
-            case pattern =>
-              val idxOpt = tokens.sliding(pattern.length).zipWithIndex.find {
-                case (window, _) => window.map(_.toLowerCase) == pattern
-              }.map(_._2 + pattern.length)
-    
-              idxOpt.flatMap { idx =>
-                if (idx < tokens.length) Some(tokens(idx)) else None
-              }
-          }
-          .flatten
+
+        tokens match {
+            case name :: Nil => Some(name)
+
+            case _ =>
+            val titleMatch = tokens.sliding(2).collectFirst {
+                case List(title, name) if titles.contains(title.toLowerCase) => name
+            }
+
+            titleMatch.orElse {
+                nameIntroPatterns
+                .sortBy(-_.length)
+                .collectFirst {
+                    case pattern =>
+                    val idxOpt = tokens.sliding(pattern.length).zipWithIndex.find {
+                        case (window, _) => window.map(_.toLowerCase) == pattern
+                    }.map(_._2 + pattern.length)
+                    idxOpt.flatMap(idx => tokens.lift(idx))
+                }
+                .flatten
+            }
+        }
     }
     
 
@@ -114,14 +128,12 @@ object Chatbot {
         val knownIntents: Set[String] = Set("what", "when", "how", "how many", "how long", "who", "where")
 
         val matchedSports = tokens.filter(token => knownSports.contains(token))
-
         var matchedIntents = tokens.filter(token => knownIntents.contains(token))
 
         if (matchedIntents.contains("how") &&
             (matchedIntents.contains("how many") || matchedIntents.contains("how long"))) {
             matchedIntents = matchedIntents.filterNot(_ == "how")
         }
-
 
         val _sport: Option[String] = matchedSports.distinct match {
             case Nil => Some("no sport")
